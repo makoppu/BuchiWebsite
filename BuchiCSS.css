@@ -1,0 +1,221 @@
+@charset "utf-8"; 
+
+body {
+    margin: 0;
+    padding: 0;
+ }
+
+.menu {
+
+    /* background-color:rgba(166, 166, 214, 0.089); */
+    background-color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 70px;
+    align-items: center;
+    z-index: 999;
+    /* border: solid 2px #000; */
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.menu li a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #004e8e;
+}
+
+header div{
+    z-index: 0;
+    /* border: solid 2px #000; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    background-color:rgba(166, 166, 214, 0.089);
+    margin-top: 89px;
+}
+header div h1 a img{
+    /* border: solid 2px #000; */
+    width: 500px;
+    height: 300px;
+    padding-left: 200px;
+    margin-top: 30px;
+}
+header div h1 p{
+    /* border: solid 2px #000; */
+    padding-left: 100px;
+    font-size: 40px;
+    color: rgba(12, 12, 12, 0.753);
+    text-shadow: 1px 3px 3px #808080; 
+}
+
+/* header div article{
+} */
+
+header div article h2{
+    padding-left: 150px;;
+    color: rgba(12, 12, 12, 0.753);
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+header div article h3{
+    margin-top: 0px;
+    padding-left: 150px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 200;
+    color: #808080;
+}
+
+header div{
+    /* border: solid 2px #000; */
+    display: flex; 
+    align-items: center; 
+}
+
+header div article .button{
+    display: flex;
+    width: 200px;
+    height: 80px;
+    list-style: none;
+    margin-left: 200px;
+}
+
+header div article .button li{
+    margin: 20px;
+    margin-right: 120px;
+}
+
+header div article .button li h4{
+    background-color: #020d16;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 15px;
+}
+
+header div article .button li h4:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+
+/* From here is survice list part  */
+
+.service{
+    z-index: 0;
+    width: 100%;
+}
+.service h2{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(12, 12, 12, 0.753);
+    margin-bottom: 0;
+}
+.service h3{
+    font-weight: 200;
+    color: #808080;
+    text-align: center;
+    margin-top: 0;
+}
+.service .serviceList{
+    display: flex;
+    height: 500px;
+    list-style: none;    
+}
+main .service .serviceList li{
+    /* border: solid 2px #000; */
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    color:#000000c7;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8.0px rgba(166, 166, 214, 0.781);
+}
+
+main .service .serviceList li h4{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 32px;
+}
+
+main .achivement{
+    background-color:rgba(166, 166, 214, 0.089);
+} 
+
+main .achivement h2{
+    color:#000000c7;
+    font-size: 40px;
+    font-weight: 650;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    padding-top: 40px;
+} 
+
+main .achivement h3{
+    color:#000000c7;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 0px;
+    font-weight: 200;
+}
+
+main .achivement li{
+    font-size: 25px;
+    list-style: none;
+    /* margin-left: 100px; */
+    margin: 60px 100px;
+}
+
+main .achivement li span{
+    font-size: 80px;
+}
+
+main .achivement li:before{
+    content: "";
+    width: 15px; 
+    height: 15px;
+    display: inline-block;
+    background-color: #020d16;
+    border-radius: 50%;
+}
+
+
+main .achivement table{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20PX;
+    margin-left: 100px;
+    font-weight: 0;
+}
+main .achivement table th{
+    width: 500px;
+}
+main .achivement table tr{
+    height: 40px;
+}
+
