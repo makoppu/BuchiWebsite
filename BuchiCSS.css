@@ -163,8 +163,14 @@ main .service .serviceList li h4{
     font-size: 32px;
 }
 
+main .service .serviceList li:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
 main .achivement{
     background-color:rgba(166, 166, 214, 0.089);
+    height: 1100px;
 } 
 
 main .achivement h2{
@@ -211,6 +217,7 @@ main .achivement table{
     margin-top: 20PX;
     margin-left: 100px;
     font-weight: 0;
+    margin-bottom: 50px;
 }
 main .achivement table th{
     width: 500px;
@@ -218,4 +225,169 @@ main .achivement table th{
 main .achivement table tr{
     height: 40px;
 }
+
+main .CostomerReview h2{
+    text-align: center;
+    color:#000000c7;
+    font-size: 40px;
+    font-weight: 650; 
+    margin-top: 100px;
+    margin-bottom: 0px; 
+}
+main .CostomerReview h3{
+    font-weight: 200;
+    color: #808080;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+main .CostomerReview .ReviewList .block1{
+    display: flex;
+}
+
+main .CostomerReview .ReviewList .block2{
+    display: flex;
+}
+main .CostomerReview .ReviewList li{
+    list-style: none;
+}
+main .CostomerReview .ReviewList li a{
+    display: flex;
+}
+main .CostomerReview .ReviewList li a img{
+    width: 300px;
+    height: 300px;
+}
+main .CostomerReview .ReviewList li a p{
+    background-color:rgba(128, 158, 223, 0.39);  
+    width: 500px;
+    height:300px;
+    margin: 50px
+}
+
+
+main .Video{
+    text-align: center;
+    background-color:rgba(166, 166, 214, 0.089);
+}
+
+main .Video h3{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(12, 12, 12, 0.753);
+    margin-bottom: 0;
+}
+
+main .Video h4{
+    font-weight: 200;
+    color: #808080;
+}
+
+main .Videolist{
+    justify-content: center;
+    display: flex;
+}
+
+main .Videolist li{
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin-left: 50px;
+}
+
+main .Videolist li:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+main .Video .Videolist li h4{
+    background-color: #eaeff4;
+    color: #020d16;
+    display: block;
+    border-radius: 4px;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 10px;
+    box-shadow: 0px 0px 8.0px rgba(166, 166, 214, 0.781);
+}
+
+.Contact{
+    margin-right: 0;
+    margin-left: auto;
+    width: 30%;
+    height: 700px;
+    margin-right: 100px;
+    margin-top: 200px;
+}
+
+.Contact h2{
+    font-weight: 300;
+    color: #808080;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.Contact h3{
+    background-color: #020d16;
+    color: #fff;
+    display: block;
+    border-radius: 7px;
+    width: 400px;
+    height: 70px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.Contact h3:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+/* Fotter page */
+footer{
+    background-color: #020d16;
+    color: #fff;
+
+}
+footer div{
+    display: flex;
+}
+
+footer div a img{
+    /* margin-right: 50px; */
+    margin-top: 100px;
+    margin-left: 100px;
+}
+footer div a p{
+    margin-left: 100px;
+}
+footer div ul{
+    margin-top: 50px;
+    margin-left: 350px;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer div ul li{
+    height:300px;
+    width: 300px;
+}
+
+footer div ul li h4{
+    margin: 30px;
+}
+
+footer p{
+    text-align: center;
+}
+
 
