@@ -59,6 +59,8 @@ header div{
     /* flex-direction: column; */
     padding: 20px;
     text-align: center;
+
+    border: solid 2px #1781e4;
     
 }
 header div h1{
@@ -91,7 +93,7 @@ header div article h2{
     width: 100%;
     padding-left: 80px;
     color: rgba(12, 12, 12, 0.753);
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 0px;
     text-align: center;
 }
@@ -104,7 +106,9 @@ header div article h3{
     font-size: 18px;
     font-weight: 200;
     color: #808080;
+    border: solid 5px #cf17e4;
 }
+
 
 header div article .button{
     display: flex;
@@ -117,6 +121,7 @@ header div article .button{
 header div article .button li{
     margin: 20px;
     margin-right: 120px;
+
 }
 
 header div article .button li a{
@@ -130,6 +135,7 @@ header div article .button li a{
     text-align: center;
     font-weight: 200;
     padding-top: 15px;
+
 }
 
 header div article .button li a:hover{
@@ -139,9 +145,14 @@ header div article .button li a:hover{
 
 
 /* From here is survice list part  */
+main{
+    width: 100%;
 
+}
 .service{
     z-index: 0;
+    width: 100%;
+    border: solid 2px #e41717;
     width: 100%;
 }
 .service h2{
