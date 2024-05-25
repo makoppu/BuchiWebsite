@@ -15,21 +15,24 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding-left: 70px;
+    /* padding-left: 70px; */
     align-items: center;
-    /* border: solid 2px #000; */
+    border: solid 2px #000;
 }
 
-.menu ul{
+.menu ul{ 
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    width: 1240px;
+    /* width: 1240px; */
+    width: 70%;
     margin: 0 auto;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
+    padding: 5px 5px;
     font-size: 20px;
     font-weight: bold;
     align-items: center;
+    border: solid 2px #e41717;
 }
 
 .menu li a{
@@ -58,28 +61,35 @@ header div{
     text-align: center;
     
 }
+header div h1{
+    max-width: 1000px;
+    /* border: solid 2px #17e48f; */
+}
 header div h1 a img{
     /* border: solid 2px #000; */
     width: 100%;
     max-width: 500px;
     height: auto;
-    padding-left: 200px;
+    padding-left: 0px;
     margin-top: 30px;
 }
 header div h1 p{
     /* border: solid 2px #000; */
-    padding-left: 100px;
-    font-size: 40px;
+    width: 100%;
+    padding-left: 0px;
+    font-size: 35px;
     color: rgba(12, 12, 12, 0.753);
     text-shadow: 1px 3px 3px #808080; 
     text-align: center;
+    
 }
 
 /* header div article{
 } */
 
 header div article h2{
-    padding-left: 150px;
+    width: 100%;
+    padding-left: 80px;
     color: rgba(12, 12, 12, 0.753);
     font-size: 80px;
     margin-bottom: 0px;
@@ -87,8 +97,9 @@ header div article h2{
 }
 
 header div article h3{
+    width: 100%;
     margin-top: 0px;
-    padding-left: 150px;
+    padding-left: 80px;
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 200;
