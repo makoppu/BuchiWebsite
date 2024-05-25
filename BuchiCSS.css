@@ -17,7 +17,6 @@ body {
     width: 100%;
     padding-left: 70px;
     align-items: center;
-    z-index: 999;
     /* border: solid 2px #000; */
 }
 
@@ -50,11 +49,20 @@ header div{
     height: 750px;
     background-color:rgba(166, 166, 214, 0.089);
     margin-top: 89px;
+    display: flex; 
+    align-items: center; 
+
+    /* ここからchatGPT Sugession */
+    /* flex-direction: column; */
+    padding: 20px;
+    text-align: center;
+    
 }
 header div h1 a img{
     /* border: solid 2px #000; */
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     padding-left: 200px;
     margin-top: 30px;
 }
@@ -64,16 +72,18 @@ header div h1 p{
     font-size: 40px;
     color: rgba(12, 12, 12, 0.753);
     text-shadow: 1px 3px 3px #808080; 
+    text-align: center;
 }
 
 /* header div article{
 } */
 
 header div article h2{
-    padding-left: 150px;;
+    padding-left: 150px;
     color: rgba(12, 12, 12, 0.753);
     font-size: 80px;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 header div article h3{
@@ -83,12 +93,6 @@ header div article h3{
     font-size: 18px;
     font-weight: 200;
     color: #808080;
-}
-
-header div{
-    /* border: solid 2px #000; */
-    display: flex; 
-    align-items: center; 
 }
 
 header div article .button{
@@ -260,6 +264,7 @@ main .CostomerReview .ReviewList li a{
 main .CostomerReview .ReviewList li a img{
     width: 300px;
     height: 300px;
+    object-fit: cover;
 }
 main .CostomerReview .ReviewList li a p{
     background-color:rgba(128, 158, 223, 0.39);  
@@ -366,6 +371,7 @@ footer div a img{
     /* margin-right: 50px; */
     margin-top: 100px;
     margin-left: 100px;
+    object-fit: cover;
 }
 footer div a p{
     margin-left: 100px;
