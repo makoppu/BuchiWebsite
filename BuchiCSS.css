@@ -54,13 +54,10 @@ header div{
     /* margin-top: 89px; */
     display: flex; 
     align-items: center; 
-
-    /* ここからchatGPT Sugession */
-    /* flex-direction: column; */
     padding: 20px;
     text-align: center;
 
-    /* border: solid 2px #1781e4; */
+    border: solid 2px #1781e4;
     
 }
 header div h1{
@@ -434,4 +431,8 @@ footer p{
     text-align: center;
 }
 
-
+/* form below is for smartphone */
+@media screen and (max-width:640px)
+{
+    
+}
