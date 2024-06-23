@@ -54,7 +54,7 @@ main{
     width: 100%;
     padding-top: 60px;
     padding-left: 40px;
-    padding-right: 800px;
+    padding-right: 40px;
     padding-bottom: 40px;
     text-align: center;
     /* border: solid 2px #e41717; */
@@ -76,10 +76,23 @@ main{
     margin: 8px;
 }
 
+.uctop h3{
+    font-size: 25px;
+    color: #514e4e;
+    font-weight: 600;
+}
+
+.uctop h2{
+    font-size: 25px;
+    color: #514e4e;
+    font-weight: 600;
+}
+
 .ucout{
     width: 100%;
+    padding-top: 40px;
     padding-left: 40px;
-    padding-right: 800px;
+    padding-right: 40px;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -102,25 +115,174 @@ main{
 
 .ucfirst{
     width: 100%;
+    padding-top: 60px;
     padding-left: 40px;
     padding-right: 800px;
     padding-bottom: 40px;
     text-align: center;
 }
 
-.uctop h3{
-    font-size: 25px;
-    color: #514e4e;
-    font-weight: 600;
-}
-
-.uctop h2{
-    font-size: 25px;
-    color: #514e4e;
-    font-weight: 600;
-}
-
 .ucfirst p{
     margin: 8px;
 }
 
+.ucfirst h3{
+    font-size: 25px;
+    color: #514e4e;
+    font-weight: 600;
+}
+
+.ucfirst h2{
+    font-size: 25px;
+    color: #514e4e;
+    font-weight: 600;
+}
+
+main div{
+    display: flex;
+}
+
+.button{
+    display: flex;
+    width: 200px;
+    height: 80px;
+    list-style: none;
+    margin-left: 210px;
+}
+
+.button li{
+    margin: 20px;
+    margin-right: 120px;
+}
+
+.button li a{
+    text-decoration: none;
+    background-color: #020d16;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 15px;
+}
+
+.button li a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.button2{
+    display: flex;
+    width: 200px;
+    height: 80px;
+    list-style: none;
+    margin-left: 210px;
+}
+
+.button2 li{
+    margin: 20px;
+    margin-right: 120px;
+}
+
+.button2 li a{
+    text-decoration: none;
+    background-color: #020d16;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 15px;
+}
+
+.button2 li a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.button3{
+    display: flex;
+    width: 200px;
+    height: 80px;
+    list-style: none;
+    margin-left: 210px;
+}
+
+.button3 li{
+    margin: 20px;
+    margin-right: 120px;
+}
+
+.button3 li a{
+    text-decoration: none;
+    background-color: #020d16;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 15px;
+}
+
+.button3 li a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.merit{
+    background-color:rgba(166, 166, 214, 0.089);
+}
+.merit h1{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(12, 12, 12, 0.753);
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.merit h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(12, 12, 12, 0.753);
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.ichiban{
+    display: flex;
+    margin: 70px;
+}
+
+.niban{
+    margin: 70px;
+}
+
+.sanban{
+    margin: 70px;
+}
+
+.ichiban h3{
+    font-weight: 800;
+    font-size: 30px;
+    color: rgba(12, 12, 12, 0.753);
+}
+
+.niban h3{
+    font-weight: 800;
+    font-size: 30px;
+    color: rgba(12, 12, 12, 0.753);
+}
+
+.sanban h3{
+    font-weight: 800;
+    font-size: 30px;
+    color: rgba(12, 12, 12, 0.753);
+}
