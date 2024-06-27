@@ -50,6 +50,68 @@ main{
     padding-top: 80px;
 }
 
+main h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.koukoku{
+    background-color: rgb(231, 244, 255);
+    height: 160px;
+}
+
+.koukoku a{
+    margin-top: 5px;
+}
+
+.koukoku a h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.koukoku h5{
+    text-align: center;
+    font-size: 13px;
+}
+
+.button5{
+    display: flex;
+    width: 300px;
+    height: 80px;
+    list-style: none;
+    margin-left: 610px;
+    padding-bottom: 20px;
+}
+
+.button5 li{
+    margin: 20px;
+    margin-right: 120px;
+}
+
+.button5 li a{
+    text-decoration: none;
+    background-color: #020d16;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 15px;
+}
+
+.button5 li a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+
+
 .uctop{
     width: 100%;
     padding-top: 60px;
@@ -117,7 +179,6 @@ main{
     width: 100%;
     padding-top: 60px;
     padding-left: 40px;
-    padding-right: 800px;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -133,6 +194,30 @@ main{
 }
 
 .ucfirst h2{
+    font-size: 25px;
+    color: #514e4e;
+    font-weight: 600;
+}
+
+.ucessay{
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.ucessay p{
+    margin: 8px;
+}
+
+.ucessay h3{
+    font-size: 25px;
+    color: #514e4e;
+    font-weight: 600;
+}
+
+.ucessay h2{
     font-size: 25px;
     color: #514e4e;
     font-weight: 600;
@@ -235,15 +320,48 @@ main div{
     transition: 0.3s;
 }
 
+.button4{
+    display: flex;
+    width: 200px;
+    height: 80px;
+    list-style: none;
+    margin-left: 240px;
+}
+
+.button4 li{
+    margin: 20px;
+    margin-right: 120px;
+}
+
+.button4 li a{
+    text-decoration: none;
+    background-color: #020d16;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 15px;
+}
+
+.button4 li a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .merit{
     background-color:rgba(166, 166, 214, 0.089);
+    margin: 0px;
 }
+
 .merit h1{
     font-weight: 900;
     font-size: 40px;
     text-align: center;
     color: rgba(12, 12, 12, 0.753);
-    margin-top: 80px;
+    padding-top: 80px;
     margin-bottom: 0;
 }
 
@@ -259,14 +377,34 @@ main div{
 .ichiban{
     display: flex;
     margin: 70px;
+    margin-left: 200px;
+}
+
+.ichiban a{
+    margin-left: 200px;
+    margin-top: 50px;
 }
 
 .niban{
+    display: flex;
     margin: 70px;
+    margin-left: 200px;
+}
+
+.niban a{
+    margin-left: 200px;
+    margin-top: 50px;
 }
 
 .sanban{
+    display: flex;
     margin: 70px;
+    margin-left: 200px;
+}
+
+.sanban a{
+    margin-left: 200px;
+    margin-top: 50px;
 }
 
 .ichiban h3{
@@ -285,4 +423,47 @@ main div{
     font-weight: 800;
     font-size: 30px;
     color: rgba(12, 12, 12, 0.753);
+}
+
+.taisei{
+    padding-bottom: 50px;
+}
+
+.taisei h1{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(12, 12, 12, 0.753);
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.taisei h2{
+    font-weight: bold;
+    font-size: 23px;
+    color: rgba(12, 12, 12, 0.753);
+
+}
+
+.taisei div{
+    display: flex;
+    margin-left: 200px;
+}
+
+.taisei div a{
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.tuyomi{
+    background-color:rgba(166, 166, 214, 0.089);
+    padding-top: 80px;
+}
+
+.tuyomi h1{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(12, 12, 12, 0.753);
+    margin-bottom: 50px;
 }
