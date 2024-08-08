@@ -36,14 +36,7 @@ body {
     /* border: solid 2px #e41717; */
 }
 
-.menu li a{
-    color: black;
-    text-decoration: none;
-}
 
-.menu li a:hover{
-    color: #004e8e;
-}
 
 header div{
     width: 100%;

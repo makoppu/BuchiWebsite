@@ -1,0 +1,151 @@
+@charset "utf-8"; 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
+ }
+
+.menu {
+
+    /* background-color:rgba(166, 166, 214, 0.089); */
+    background-color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* padding-left: 70px; */
+    align-items: center;
+    /* border: solid 2px #000; */
+    height: 75px;
+}
+
+.menu ul{ 
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    /* width: 1240px; */
+    width: 70%;
+    margin: 0 auto;
+    /* padding: 10px 20px; */
+    padding: 5px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    /* border: solid 2px #e41717; */
+}
+
+.menu li a{
+    color: black;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #004e8e;
+}
+
+header div{    
+    background-color:rgba(166, 166, 214, 0.089); 
+    margin-top: 75px;
+    width: 100%;
+    height: 300px;
+}
+header div h1{
+    padding-top: 100px;
+    padding-left: 50px;
+    font-size: 100px;
+    color: #004e8ebe;
+}
+
+header div h3{
+    padding-left: 50px;
+}
+
+main .sub-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main .sub-group div{
+    width: 350px;
+    height: 200px;
+
+    margin-left: 50px;
+    padding-top: 50px;
+
+}
+main .sub-group div h2{
+    padding-top: 10px;
+}
+
+main .link{
+    background-color:rgba(166, 166, 214, 0.089); 
+    height:200px;
+}
+main .link h2{
+    padding-top: 50px;
+}
+main .link h2 a{
+    background-color: #020d16;
+    color: #fff;
+    display: block;
+    border-radius: 4px;
+    width: 300px;
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+main .link h3{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/* Fotter page */
+footer{
+    background-color: #020d16;
+    color: #fff;
+    padding: 20px 0; 
+    text-align: center;
+
+}
+footer div{
+    display: flex;
+}
+
+footer div a img{
+    /* margin-right: 50px; */
+    margin-top: 100px;
+    margin-left: 100px;
+    object-fit: cover;
+}
+footer div a p{
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+footer div ul{
+    margin-top: 50px;
+    margin-left: 350px;
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer div ul li{
+    height:200px;
+    width: 300px;
+}
+
+footer div ul li h4{
+    margin: 30px;
+}
+
+footer p{
+    text-align: center;
+}
