@@ -18,6 +18,7 @@ body {
     align-items: center;
     /* border: solid 2px #000; */
     height: 75px;
+    z-index: 999;
 }
 
 .menu ul{ 
@@ -35,14 +36,31 @@ body {
     /* border: solid 2px #e41717; */
 }
 
-.menu li a{
+header .menu li {
     color: black;
     text-decoration: none;
-}
 
-.menu li a:hover{
-    color: #004e8e;
+    /* Underline animation */
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
 }
+header .menu li:hover {
+    color: #004e8e;  
+}
+.menu li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #004e8e;
+    transition: 0.3s;
+  }
+  .menu li a:hover::before{
+    width: 100%;
+  }
 
 header .pageTitle {    
     background-color:rgba(166, 166, 214, 0.089); 
@@ -53,15 +71,29 @@ header .pageTitle {
 header .pageTitle h1{
     padding-top: 100px;
     padding-left: 50px;
+    margin-bottom: 20px;
     font-size: 100px;
     color: #004e8ebe;
 }
 
 header .pageTitle h3{
     padding-left: 50px;
+    font-size: 18px;
 }
 
 /* ポジション紹介 */
+main .explanation_position {
+    margin: 50px 0 50px 100px;
+
+    text-wrap: wrap;
+}
+main .explanation_position h2 {
+    margin-bottom: 50px;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
 main .sub-group{
     display: flex;
     flex-wrap: wrap;
@@ -70,21 +102,58 @@ main .sub-group{
 main .sub-group {
     margin: 50px;
 }
-main .sub-group div{
+main .sub-group .community,
+main .sub-group .transfer,
+main .sub-group .event,
+main .sub-group .SNS,
+main .sub-group .HMR,
+main .sub-group .Sales,
+main .sub-group .developer 
+{
     width: 350px;
-    height: 200px;
-
-    margin: 15px;
-    padding: 50px 10px;
-
-    background-color: gainsboro;
+    height: 350px;
     border-radius: 10px;
+    margin: 15px;
+    padding: 30px 10px;
+
+    position: relative; /* For animation */
+    color: #000000;
+    background-image: linear-gradient(to left, rgba(166, 166, 214, 0.2) 50%, #174974 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0; 
+    
+    transition: 
+        background-position 0.5s ease,
+        color 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+main .sub-group .community:hover,
+main .sub-group .transfer:hover,
+main .sub-group .event:hover,
+main .sub-group .SNS:hover,
+main .sub-group .HMR:hover,
+main .sub-group .Sales:hover,
+main .sub-group .developer:hover {
+    background-position: 0 0; /* 背景を左にスライド */
+    color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(3, 3, 4, 0.5);
+}
+
+main .sub-group div img {
+    display: block;
+    margin: auto;
+
+    width: 280px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 main .sub-group div h1 {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 main .sub-group div h2 {
     padding: 0 20px;
@@ -94,51 +163,55 @@ main .sub-group div h2 {
 
 main .link {
     background-color: rgba(166, 166, 214, 0.089);
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px; 
 }
-
 main .link h2 {
     background-color: #020d16;
     color: #fff;
     border-radius: 4px;
-    width: 300px;
-    height: 50px;
+    width: 500px;
+    height: 90px;
+    margin: 30px 0; 
 
-    margin: 10px 0; 
-    
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 40px;
+    color: #fff; 
+
+    position: relative; /* For animation */
+    background-image: linear-gradient(to left, #020d16 50%, #174974 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: 1s;
 }
 
+main .link h2:hover {
+    background-position: left; /* Slide the background to the left */
+}
 main .link h2 a {
-    font-size: 30px;
-    color: #fff; 
     text-decoration: none; 
 }
-
 main .link h3 {
     margin-top: 20px;
+    font-size: 20px;
     text-align: center;
 }
-
 /* Fotter page */
 footer{
     background-color: #020d16;
     color: #fff;
     padding: 20px 0 100px 0; 
     text-align: center;
-
 }
 footer div{
     display: flex;
 }
-
 footer div a img{
     /* margin-right: 50px; */
     margin: 100px 0 50px 100px;
@@ -157,16 +230,16 @@ footer div ul{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 footer div ul li{
     height:50px;
     width: 300px;
 }
-
 footer div ul li h4{
     margin: 30px;
 }
-
 footer p{
     text-align: center;
 }
+
+/* Tablet Size */
+/* Smartphone View */
