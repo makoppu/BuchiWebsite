@@ -35,11 +35,7 @@ body {
     align-items: center;
     /* border: solid 2px #e41717; */
 }
-
 header .menu li {
-    color: black;
-    text-decoration: none;
-
     /* Underline animation */
     display: inline-block;
     position: relative;
@@ -47,6 +43,13 @@ header .menu li {
 }
 header .menu li:hover {
     color: #004e8e;  
+}
+header .menu li a {
+    color: black;
+    text-decoration: none;
+}
+header .menu li a:hover {
+    color: #004e8e;
 }
 .menu li a::before{
     content: "";
@@ -59,6 +62,7 @@ header .menu li:hover {
     transition: 0.3s;
   }
   .menu li a:hover::before{
+    color: #004e8e;
     width: 100%;
   }
 
@@ -81,86 +85,127 @@ header .pageTitle h3{
     font-size: 18px;
 }
 
-/* ポジション紹介 */
-main .explanation_position {
-    margin: 50px 0 50px 100px;
-
-    text-wrap: wrap;
-}
-main .explanation_position h2 {
-    margin-bottom: 50px;
-
-    font-size: 20px;
-    font-weight: 500;
-}
-
-main .sub-group{
+/* ポジショントグル */
+main .intro_dept {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 50px auto;
 }
-main .sub-group {
-    margin: 50px;
-}
-main .sub-group .community,
-main .sub-group .transfer,
-main .sub-group .event,
-main .sub-group .SNS,
-main .sub-group .HMR,
-main .sub-group .Sales,
-main .sub-group .developer 
-{
-    width: 350px;
-    height: 350px;
+
+main .intro_dept details {
+    border: 1px solid rgba(166, 166, 214, 0.2);
     border-radius: 10px;
-    margin: 15px;
-    padding: 30px 10px;
-
-    position: relative; /* For animation */
-    color: #000000;
-    background-image: linear-gradient(to left, rgba(166, 166, 214, 0.2) 50%, #174974 50%);
-    background-size: 200% 100%;
-    background-position: 100% 0; 
+    background-color: rgba(166, 166, 214, 0.089);
     
-    transition: 
-        background-position 0.5s ease,
-        color 0.5s ease,
-        box-shadow 0.5s ease;
+    margin-bottom: 20px;
+    width: 70vw; 
+    text-wrap: wrap;
+    list-style: square;
 }
 
-main .sub-group .community:hover,
-main .sub-group .transfer:hover,
-main .sub-group .event:hover,
-main .sub-group .SNS:hover,
-main .sub-group .HMR:hover,
-main .sub-group .Sales:hover,
-main .sub-group .developer:hover {
-    background-position: 0 0; /* 背景を左にスライド */
+main .intro_dept summary {
+    background-color: #174974;
+    border-radius: 10px;
+
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    font-weight: bold; 
     color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(3, 3, 4, 0.5);
-}
 
-main .sub-group div img {
-    display: block;
-    margin: auto;
-
-    width: 280px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 15px;
+    padding: 1em;
+    width: 100%; /* 親の幅に基づいた幅にする */
+    transition: all 0.5s;
 }
-main .sub-group div h1 {
+main .intro_dept summary:hover {
+    background-color: #03325b;
+    letter-spacing: 0.1em;
+}
+button {
+    margin: 0 auto 20px 15vw; /* ボタンの右端をdetailsの右端に合わせる */
+
+    color: #174974;
     font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px 0;
-}
-main .sub-group div h2 {
-    padding: 0 20px;
-    font-size: 14px;
-    line-height: 1.5;
+    text-decoration: underline;
+
+    cursor: pointer;
 }
 
+main .intro_dept details .toggle_content {
+    padding: 20px 30px 20px 40px;
+    line-height: 2.5;
+}
+main .intro_dept .toggle_content h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+main .intro_dept details .toggle_content p {
+    padding: 0 30px;
+} 
+main .intro_dept details .toggle_content li {
+    margin: 0 30px;
+    list-style: circle;
+} 
+
+main .intro_dept details[open] {
+    border-radius: 10px;
+    width: 70vw;
+}
+main .intro_dept details[open] summary {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+/* 応募人数 */
+main .recruit-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .recruit-info table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin: 0 8vw;
+    width: 35vw;
+}
+main .recruit-info caption {
+    caption-side: top;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  main .recruit-info thead {
+    background-color: rgb(228 240 245);
+  }
+  
+  main .recruit-info th,
+  main .recruit-info td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 20px;
+  }
+  
+  main .recruit-info td:last-of-type {
+    text-align: center;
+  }
+  main .recruit-info .apply-flow {
+    width: 30vw;
+    line-height: 2;
+  }
+  main .recruit-info .apply-flow h3{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  main .recruit-info .apply-flow ol {
+    margin-left: 25px;
+    list-style: decimal;
+  }
+
+
+/* 応募フォーム */
 main .link {
     background-color: rgba(166, 166, 214, 0.089);
     height: 300px;
@@ -168,11 +213,12 @@ main .link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    margin-top: 100px;
     padding: 20px; 
 }
 main .link h2 {
     background-color: #020d16;
-    color: #fff;
     border-radius: 4px;
     width: 500px;
     height: 90px;
@@ -190,11 +236,11 @@ main .link h2 {
     background-position: right;
     transition: 1s;
 }
-
 main .link h2:hover {
     background-position: left; /* Slide the background to the left */
 }
 main .link h2 a {
+    color: #fff; 
     text-decoration: none; 
 }
 main .link h3 {
