@@ -35,7 +35,11 @@ body {
     align-items: center;
     /* border: solid 2px #e41717; */
 }
+
 header .menu li {
+    color: black;
+    text-decoration: none;
+
     /* Underline animation */
     display: inline-block;
     position: relative;
@@ -43,13 +47,6 @@ header .menu li {
 }
 header .menu li:hover {
     color: #004e8e;  
-}
-header .menu li a {
-    color: black;
-    text-decoration: none;
-}
-header .menu li a:hover {
-    color: #004e8e;
 }
 .menu li a::before{
     content: "";
@@ -62,7 +59,6 @@ header .menu li a:hover {
     transition: 0.3s;
   }
   .menu li a:hover::before{
-    color: #004e8e;
     width: 100%;
   }
 
