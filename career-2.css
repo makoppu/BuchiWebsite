@@ -115,7 +115,7 @@ main .intro_dept summary {
     transition: all 0.5s;
 }
 main .intro_dept summary:hover {
-    background-color: #03325b;
+    background-color: #1e5e96;
     letter-spacing: 0.1em;
 }
 button {
@@ -162,7 +162,7 @@ main .recruit-info {
 main .recruit-info table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     margin: 0 8vw;
     width: 35vw;
@@ -170,8 +170,9 @@ main .recruit-info table {
 main .recruit-info caption {
     caption-side: top;
     font-size: 20px;
-    padding: 10px;
+    padding: 15px;
     font-weight: bold;
+    text-align: center;
   }
   
   main .recruit-info thead {
@@ -182,17 +183,19 @@ main .recruit-info caption {
   main .recruit-info td {
     border: 1px solid rgb(160 160 160);
     padding: 8px 20px;
+    text-align: center;
   }
   
   main .recruit-info td:last-of-type {
     text-align: center;
   }
+
   main .recruit-info .apply-flow {
     width: 30vw;
-    line-height: 2;
+    line-height: 2.5;
   }
   main .recruit-info .apply-flow h3{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
   }
   main .recruit-info .apply-flow ol {
