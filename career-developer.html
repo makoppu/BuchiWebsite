@@ -14,7 +14,13 @@
             <nav class = "menu">
                 <p><img src="../BuchiWebsite/img-logo/black_36px_Buchi.png" alt="" width="80" height="50"></p>
                 <h2>BUCHI RYUGAKU</h2>
-              <ul>
+
+                <!-- iPhoneなどのデバイスではメニューアイコンに納める -->
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <img src="../BuchiWebsite/icon/ic-menu.svg" alt="Menu Icon">
+                </div>
+
+              <ul id="menu-list">
                 <!-- <li><img src="../image/Buchilogo.jpg" alt="" width="80" height="50"></li>
                 <li><span style="font-weight:bold;">BUCHI RYUGAKU</span></li> -->
                 <li><a href="#">HOME</a></li>
@@ -24,11 +30,14 @@
                 <li><a href="#">採用情報</a></li>
                 <li><a href="#">FAQ</a></li>
               </ul>
+              <script src="menu.js"></script>
             </nav>
+
             <section class="pageTitle">
                 <h1>Developer 班</h1>
             </section>
         </header>
+        
 
         <main>
             <!-- 班のInfo -->

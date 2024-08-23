@@ -6,49 +6,45 @@ body {
     font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
  }
 
-.menu {
-    /* background-color:rgba(166, 166, 214, 0.089); */
+ .menu {
     background-color: white;
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* padding-left: 70px; */
     align-items: center;
-    /* border: solid 2px #000; */
     height: 75px;
     z-index: 999;
+    padding: 0 15px; /* Added padding for better spacing */
 }
 
-.menu ul{ 
+.menu ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    /* width: 1240px; */
     width: 70%;
     margin: 0 auto;
-    /* padding: 10px 20px; */
     padding: 5px 5px;
     font-size: 20px;
     font-weight: bold;
     align-items: center;
-    /* border: solid 2px #e41717; */
+    transition: transform 0.3s ease-in-out;
 }
 
-header .menu li {
+.menu li {
     color: black;
     text-decoration: none;
-
-    /* Underline animation */
     display: inline-block;
     position: relative;
     transition: 0.3s;
 }
-header .menu li:hover {
-    color: #004e8e;  
+
+.menu li:hover {
+    color: #004e8e;
 }
-.menu li a::before{
+
+.menu li a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -57,11 +53,14 @@ header .menu li:hover {
     height: 2px;
     background: #004e8e;
     transition: 0.3s;
-  }
-  .menu li a:hover::before{
-    width: 100%;
-  }
+}
 
+.menu li a:hover::before {
+    width: 100%;
+}
+
+
+/*タイトル*/
 header .pageTitle {    
     background-color:rgba(166, 166, 214, 0.089); 
     margin-top: 75px;
@@ -131,6 +130,9 @@ main .experience .member_experience .member .name_photo img {
     max-width: 100%;
     height: auto;
 }
+main .experience .member_experience .member .speech_bubble p {
+    padding: 2.5px 5px;
+}
 
 main .experience .member_experience .member .speech_bubble {
     display: flex;
@@ -143,9 +145,6 @@ main .experience .member_experience .member .speech_bubble {
     border-radius: 15px;
     background-color: #dce7f9;
     color: #333333;
-}
-main .experience .member_experience .member .speech_bubble p {
-    padding: 2.5px 5px;
 }
 
 main .experience .member_experience .member .speech_bubble::before {
@@ -246,3 +245,183 @@ footer p{
 
 /* Tablet Size */
 /* Smartphone View */
+@media screen and (max-width: 600px) {
+     
+    /* ハンバーガーメニューアイコンのスタイル */
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+    }
+
+    .menu-icon img {
+        width: 30px; /* アイコンのサイズ調整 */
+        height: auto;
+    }
+
+    /* メニューリストの初期状態 */
+    #menu-list {
+        display: none; /* 初期状態で非表示 */
+    }
+
+    .menu ul {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        background-color: white;
+    }
+
+    .menu ul.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    header .pageTitle {    
+        background-color:rgba(166, 166, 214, 0.089); 
+        margin-top: 75px;
+        width: 100%;
+        height: 150px;
+    }
+
+    header .pageTitle h1{
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 50px;
+        font-size: 50px;
+        color: #004e8ebe;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
+     }
+
+    /* 班紹介 */
+    main .group-intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto;
+    }
+    main .group-intro div {
+        margin: 10px auto;
+
+        line-height: 2;
+        margin: 10px auto;
+    }
+    main .group-intro div h3 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #174974;
+        margin: 15px 0;
+    }
+    main .group-intro div p {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+    main .group-intro div li {
+        list-style: circle;
+        margin-left: 40px;
+        padding-left: 10px;
+    }
+
+    main .group-intro div {
+        margin: 10px auto;
+        width: 80vw;
+    
+        line-height: 2;
+        margin: 10px auto;
+    }
+
+    
+    main .experience .member_experience .member {
+        display: flex;
+        flex-direction: column;
+    }
+    main .experience .member_experience .member .name_photo{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .experience .member_experience .member .name_photo h4 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    main .experience .member_experience .member .name_photo img {
+        max-width: 100%;
+        height: auto;
+    }
+    main .experience .member_experience .member .speech_bubble p {
+        padding: 2.5px 5px;
+    }
+    
+    main .experience .member_experience .member .speech_bubble {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 70vw;
+        margin-top: 15px;
+        padding: .8em 1.2em;
+        border-radius: 15px;
+        background-color: #dce7f9;
+        color: #333333;
+    }
+    
+    main .experience .member_experience .member .speech_bubble::before {
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: -15px;
+    width: 30px;
+    height: 15px;
+    background-color: #dce7f9;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    content: '';
+    }
+
+    /*応募リンク*/
+    main .link {
+        background-color: rgba(166, 166, 214, 0.089);
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px; 
+    }
+    main .link h2 {
+        background-color: #020d16;
+        color: #fff;
+        border-radius: 4px;
+        width: 80vw;
+        height: 90px;
+        margin: 30px 0; 
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: #fff; 
+    }
+
+    main .link h2 a {
+        text-decoration: none; 
+    }
+    main .link h3 {
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
