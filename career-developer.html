@@ -14,29 +14,35 @@
             <nav class = "menu">
                 <p><img src="../BuchiWebsite/img-logo/black_36px_Buchi.png" alt="" width="80" height="50"></p>
                 <h2>BUCHI RYUGAKU</h2>
+                
+                    <!-- iPhoneなどのデバイスでは３本線のメニューアイコンに納める -->
+                    <div class="hamburger-menu" onclick="toggleMenu(this)">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
 
-                <!-- iPhoneなどのデバイスではメニューアイコンに納める -->
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <img src="../BuchiWebsite/icon/ic-menu.svg" alt="Menu Icon">
-                </div>
+                    <ul id="menu-list">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ストーリー</a></li>
+                        <li><a href="#">運営メンバー紹介</a></li>
+                        <li><a href="#">事業紹介</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
 
-              <ul id="menu-list">
-                <!-- <li><img src="../image/Buchilogo.jpg" alt="" width="80" height="50"></li>
-                <li><span style="font-weight:bold;">BUCHI RYUGAKU</span></li> -->
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ストーリー</a></li>
-                <li><a href="#">運営メンバー紹介</a></li>
-                <li><a href="#">事業紹介</a></li>
-                <li><a href="#">採用情報</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-              <script src="menu.js"></script>
             </nav>
 
             <section class="pageTitle">
                 <h1>Developer 班</h1>
             </section>
         </header>
+
+        <script>
+            function toggleMenu(element) {
+           element.classList.toggle("active");
+           }
+       </script>
         
 
         <main>
