@@ -127,7 +127,7 @@ main .experience .member_experience .member .name_photo h4 {
     font-weight: 500;
 }
 main .experience .member_experience .member .name_photo img {
-    max-width: 100%;
+    max-width: 15vw;
     height: auto;
 }
 main .experience .member_experience .member .speech_bubble p {
@@ -137,6 +137,7 @@ main .experience .member_experience .member .speech_bubble p {
 main .experience .member_experience .member .speech_bubble {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
     width: 35vw;
@@ -158,9 +159,6 @@ main .experience .member_experience .member .speech_bubble::before {
     clip-path: polygon(0 50%, 100% 0, 100% 100%);
     content: '';
 }
-
-
-
 
 /*応募リンク*/
 main .link {
@@ -204,6 +202,7 @@ main .link h3 {
     font-size: 20px;
     text-align: center;
 }
+
 /* Fotter page */
 footer{
     background-color: #020d16;
@@ -420,7 +419,7 @@ footer p{
         font-weight: 500;
     }
     main .experience .member_experience .member .name_photo img {
-        max-width: 100%;
+        max-width: 40vw;
         height: auto;
     }
     main .experience .member_experience .member .speech_bubble p {
@@ -430,6 +429,7 @@ footer p{
     main .experience .member_experience .member .speech_bubble {
         display: flex;
         flex-direction: column;
+
         align-items: center;
         position: relative;
         width: 70vw;
