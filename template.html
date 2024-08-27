@@ -17,11 +17,13 @@
             
                 <!-- iPhoneなどのデバイスでは３本線のメニューアイコンに納める -->
                  <!-- 800px以上では表示されない-->
-                <div class="hamburger-menu" onclick="toggleMenu(this)">
+                 <div class="hamburger-menu" onclick="toggleMenu(this)">
                     <div class="hamburger-line"></div>
                     <div class="hamburger-line"></div>
                     <div class="hamburger-line"></div>
                 </div>
+                
+                
 
                 <ul id="menu-list">
                     <li><a href="#">HOME</a></li>
@@ -33,12 +35,8 @@
                 </ul>
 
         </nav>
-
-        <section class="pageTitle">
-            <h1>Developer 班</h1>
-        </section>
     </header>
-    <!-- メニューを全表示かアイコンのみか判別するCSS -->
+    <!-- メニューを全表示かアイコンのみか判別するJS -->
     <script>
         function toggleMenu(element) {
        element.classList.toggle("active");
