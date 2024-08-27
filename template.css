@@ -94,6 +94,9 @@ footer .footer ul{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+footer .footer ul li {
+    width: 190px;
+}
 footer .footer ul li a{
     margin: 30px;
     display: inline-block;

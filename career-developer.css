@@ -129,6 +129,8 @@ main .experience .member_experience .member .name_photo h4 {
 main .experience .member_experience .member .name_photo img {
     max-width: 15vw;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 main .experience .member_experience .member .speech_bubble p {
     padding: 2.5px 5px;
@@ -204,42 +206,60 @@ main .link h3 {
 }
 
 /* Fotter page */
+/* Fotter page */
 footer{
     background-color: #020d16;
     color: #fff;
-    padding: 20px 0 100px 0; 
+    padding: 20px 0; 
     text-align: center;
 }
-footer div{
-    display: flex;
-}
-footer div a img{
-    /* margin-right: 50px; */
-    margin: 100px 0 50px 100px;
+
+footer .footer img{
+    margin-top: 50px;
     object-fit: cover;
 }
-footer div a p {
-    margin-left: 100px;
+footer .footer p{
     margin-bottom: 5px;
     margin-top: 5px;
 }
-footer div ul{
-    margin-top: 50px;
-    margin-left: 10vw;
+footer .footer h2{
+    margin-top: 51px;
+    text-decoration: underline;
+}
+
+footer .footer .socialmedia a img{
+    margin: 20px 20px;
+}
+footer .footer ul{
+    padding: 0% 10%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-footer div ul li{
-    height:50px;
-    width: 300px;
-}
-footer div ul li h4{
+footer .footer ul li a{
     margin: 30px;
+    display: inline-block;
+    position: relative; /* 相対位置指定 */
+    text-decoration: none; /* デフォルトのテキストの下線を消す */
 }
-footer p{
-    text-align: center;
+footer .footer ul li a::after{
+    background-color: #ffffff; /* 下線の色 */
+    bottom: 2px; /* 要素の下端からの距離 */
+    content: ""; /* 要素に内容を追加 */
+    height: 2px; /* 下線の高さ */
+    left: 0; /* 要素の左端からの距離 */
+    opacity: 0; /* 不透明度 */
+    position: absolute; /* 絶対位置指定 */
+    transition: all .3s; /* アニメーション効果を追加 */
+    width: 100%; /* 要素の幅 */
+}
+footer .footer ul li a:hover::after{
+    bottom: -4px; /* 下線を上から下に移動 */
+    opacity: 1; /* 不透明度を変更してフェードイン */
+}
+footer #copyright {
+    margin: 50px auto;
 }
 
 /* Tablet Size */
@@ -362,6 +382,7 @@ footer p{
         font-size: 50px;
         color: #004e8ebe;
     }
+    
     
 
     /* 班紹介 */

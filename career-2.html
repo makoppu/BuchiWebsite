@@ -10,26 +10,40 @@
     </head>
 
     <body>
-        <header>
-            <nav class = "menu">
-                <p><img src="../BuchiWebsite/img-logo/black_36px_Buchi.png" alt="" width="80" height="50"></p>
-                <h2>BUCHI RYUGAKU</h2>
-              <ul>
-                <!-- <li><img src="../image/Buchilogo.jpg" alt="" width="80" height="50"></li>
-                <li><span style="font-weight:bold;">BUCHI RYUGAKU</span></li> -->
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ストーリー</a></li>
-                <li><a href="#">運営メンバー紹介</a></li>
-                <li><a href="#">事業紹介</a></li>
-                <li><a href="#">採用情報</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
+        <!-- ヘッダー -->
+    <header>
+        <nav class = "menu">
+            <p><img src="../BuchiWebsite/img-logo/black_36px_Buchi.png" alt="" width="80" height="50"></p>
+            <h2>BUCHI RYUGAKU</h2>
+            
+                <!-- iPhoneなどのデバイスでは３本線のメニューアイコンに納める -->
+                 <!-- 800px以上では表示されない-->
+                 <div class="hamburger-menu" onclick="toggleMenu(this)">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+                <ul id="menu-list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ストーリー</a></li>
+                    <li><a href="#">運営メンバー紹介</a></li>
+                    <li><a href="#">事業紹介</a></li>
+                    <li><a href="#">採用情報</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
             </nav>
             <section class="pageTitle">
                 <h1> Careers</h1>
                 <h3>私たちは、「すべての日本人がUC編入に必要な知識に触れるべきである」という精神に共感してくださる仲間を募集しています</h3>
             </section>
         </header>
+        <!-- メニューを全表示かアイコンのみか判別するJS -->
+        <script>
+            function toggleMenu(element) {
+        element.classList.toggle("active");
+        }
+        </script>
+        
 
         <main>
             
@@ -275,22 +289,30 @@
                 <h2><a href="" target="_blank">応募はこちらから</a></h2>
                 <h3>皆様にお会いできるのを楽しみにしております。</h3>
             </section>
-
-            <footer>
-                <div>
-                    <a><img src="../BuchiWebsite/img-logo/white_96px_Buchi.png" alt="Buchi ロゴ">       
-                        <p>Copywrite @ 2024 Buchi留学 All rights reserved</p><br><p>buchiryugaku.2024@gmail.com</p></a>
-                      <ul>
-                        <li><h4 href="">HOME</h4></li>
-                        <li><h4 href="">ストーリー</h4></li>
-                        <li><h4 href="">運営メンバー紹介</h4></li>
-                        <li><h4 href="">事業紹介</h4></li>
-                        <li><h4 href="">採用情報</h4></li>
-                        <li><h4 href="">FAQ</h4></li>
-                      </ul>
-                </div>
-            </footer>
         </main>
+        <!-- フッターページ -->
+   <footer>
+    <div class="footer">
+        <img src="img-logo/white_96px_Buchi.png" alt="">        
+        <h2>FOLLOW US</h2>
+        <div class ="socialmedia">
+            <a href="https://www.instagram.com/buchi_ryugaku?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="image/instagramlogo2.png" alt=""></a>
+            <a href="https://www.threads.net/@buchi_ryugaku?xmt=AQGzDCskhuXKsIRPNvC-pSX9JP0-rzb83s5tXcv2Taqv8Gk" target="_blank" rel="noopener noreferrer"><img src="image/threadslogo.png" alt=""></a>
+            <a href="https://forms.gle/ujN1hSYqYwtkrV2b7" target="_blank" rel="noopener noreferrer"><img src="image/discordlogo.png" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ストーリー</a></li>
+            <li><a href="">運営メンバー紹介</a></li>
+            <li><a href="">事業紹介</a></li>
+            <li><a href="">採用情報</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+        <div id="copyright">
+            <p>Copywrite @ 2024 Buchi留学 All rights reserved<br>buchiryugaku.2024@gmail.com</p>
+        </div>
+    </div>
+</footer>
 
     </body>
 </html>
