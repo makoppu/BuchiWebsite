@@ -127,6 +127,7 @@ footer #copyright {
 
 @media screen and (max-width: 840px) {
     html, body {
+        /* どのデバイスでも横スクロール不可能にする */
         overflow-x: hidden;
     }
     body {
