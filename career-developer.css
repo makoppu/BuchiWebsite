@@ -206,7 +206,6 @@ main .link h3 {
 }
 
 /* Fotter page */
-/* Fotter page */
 footer{
     background-color: #020d16;
     color: #fff;
@@ -236,6 +235,9 @@ footer .footer ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+footer .footer ul li {
+    width: 190px;
 }
 footer .footer ul li a{
     margin: 30px;
