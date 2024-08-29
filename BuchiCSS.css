@@ -6,39 +6,57 @@ body {
     font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
  }
 
-.menu {
-
-    /* background-color:rgba(166, 166, 214, 0.089); */
+ .menu {
     background-color: white;
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* padding-left: 70px; */
     align-items: center;
-    /* border: solid 2px #000; */
     height: 75px;
+    z-index: 999;
+    padding: 0 15px; /* Added padding for better spacing */
 }
-
-.menu ul{ 
+.menu ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    /* width: 1240px; */
     width: 70%;
     margin: 0 auto;
-    /* padding: 10px 20px; */
     padding: 5px 5px;
     font-size: 20px;
     font-weight: bold;
     align-items: center;
-    /* border: solid 2px #e41717; */
+    transition: transform 0.3s ease-in-out;
+}
+.menu li {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+.menu li:hover {
+    color: #004e8e;
+}
+.menu li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #004e8e;
+    transition: 0.3s;
+}
+.menu li a:hover::before {
+    width: 100%;
 }
 
 
 
-header div{
+header .siteface{
     width: 100%;
     height: 750px;
     background-color:rgba(166, 166, 214, 0.089);
@@ -50,12 +68,11 @@ header div{
     /* border: solid 2px #1781e4; */
     
 }
-header div h1{
-    max-width: 1000px;
-    width: 640px;
+header .siteface h1{
+    width: 40%;
     /* border: solid 2px #17e48f; */
 }
-header div h1 a img{
+header .siteface h1 a img{
     /* border: solid 2px #000; */
     width: 100%;
     max-width: 500px;
@@ -63,7 +80,7 @@ header div h1 a img{
     padding-left: 0px;
     margin-top: 30px;
 }
-header div h1 p{
+header .siteface h1 p{
     /* border: solid 2px #000; */
     width: 100%;
     padding-left: 0px;
@@ -74,12 +91,12 @@ header div h1 p{
     
 }
 
-header div article{
-    width: 800px;
+header .siteface article{
+    width: 60%;
     /* border: solid 5px #cf17e4 */
 }
 
-header div article h2{
+header .siteface article h2{
     width: 100%;
     padding-left: 70px;
     color: rgba(12, 12, 12, 0.753);
@@ -88,7 +105,7 @@ header div article h2{
     text-align: center;
 }
 
-header div article h3{
+header .siteface article h3{
     width: 100%;
     margin-top: 15px;
     padding-left: 70px;
@@ -99,27 +116,25 @@ header div article h3{
     /* border: solid 5px #cf17e4; */
 }
 
-header div article h5{
+/* header .siteface article h5{
     color: #808080;
     padding-left: 320px;
-}
+} */
 
 
-header div article .button{
+header .siteface article .button{
     display: flex;
-    width: 200px;
-    height: 80px;
     list-style: none;
-    margin-left: 100px;
+    margin-left: 200px;
+    justify-content: center;
 }
 
-header div article .button li{
+header .siteface article .button li{
     margin: 20px;
     margin-right: 120px;
-
 }
 
-header div article .button li a{
+header .siteface article .button li a{
     text-decoration: none;
     background-color: #020d16;
     color: #fff;
@@ -133,7 +148,7 @@ header div article .button li a{
 
 }
 
-header div article .button li a:hover{
+header .siteface article .button li a:hover{
     opacity: 0.8;
     transition: 0.3s;
 }
@@ -439,11 +454,191 @@ footer .footer ul li a:hover::after{
     opacity: 1; /* 不透明度を変更してフェードイン */
 }
 /* form below is for smartphone */
-@media screen and (max-width:800px)
+@media screen and (max-width:840px)
 {
-    header div{
+    html, body {
+        /* 横にスクロールできないようにする */
+        overflow-x: hidden; 
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;  /* ビューポートの幅に合わせる */
+        max-width: 100vw;  /* 最大幅をビューポート幅に制限 */
+        overflow-x: hidden;  /* 横スクロールバーが出ないようにする */
+        font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
+    }
+    /* ３本線のメニュー(ハンバーガーメニュー)のスタイル */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        position: fixed;
+        top: 28px;
+        right: 30px;
+
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    /* ハンバーガーメニューのアイコンのスタイル */
+    .hamburger-line {
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 4px;
+        transition: background-color 0.3s;
+    }
+    /* activeクラスのスタイル */
+    .active .hamburger-line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    .active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+    .active .hamburger-line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    /* クリック前のメニューのスタイル：非表示 */
+    #menu-list {
+        display: none;
+        background-color: #333;
+        padding: 10px;
+    }
+    /* active（アイコンをクリック後)のメニューのスタイル */
+    .active + #menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        width: 50vw;
+        height: 80%;
+
+        position: fixed;  /* 画面の右上に固定する */
+        top: 75px;           /* 上端に配置 */
+        right: 0;        /* 右端に配置 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 影をつけて視覚的に区切る */
+        z-index: 1000;    /* 他の要素の上に表示されるように */
+    }
+    .active + #menu-list a {
         display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        padding: 1rem;
+        transition-duration: 0.2s;
+    }
+    .menu li:hover {
+        color: #b5dcff;
+    }
+    .menu li a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: #b5dcff;
+        transition: 0.3s;
+    }
+    .menu li a:hover::before {
         width: 100%;
     }
 
+    /* this is header (other than navigation)   */
+    header .siteface{
+        flex-direction: column;
+        width: 100%;
+    }
+    header .siteface h1{
+        padding-top: 100px;
+        width: 80%;
+    }
+    header .siteface h1 p{
+        padding-top: 20px;
+        font-size: 12px;
+    }
+    header .siteface article {
+        width: 80%;
+
+    }
+    header .siteface article h2{
+        font-size: 25px;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    header .siteface article h3{
+        font-size: 14px;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    header .siteface article .button{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    header .siteface article .button li{
+        margin: 20px 0px 0px 0px;
+    }
+    main .service h3{
+        text-align: center;
+        padding: 5% 10%;
+    }
+    main .service .serviceList{
+        flex-direction: column;
+    }
+    main .service .serviceList li{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    main .achivement {
+        height: auto;
+    }
+    main .achivement h2{
+        text-align: center;
+        margin: 10px 0px;
+    }
+    main .achivement h3{
+        text-align: center;
+        padding: 5% 10%;
+        margin: 0px;
+    }
+    /* main .achivement .Support {
+        list-style: none;  
+    } */
+    main .achivement .Support li{
+        font-size: 15px;
+        padding: 5% 10%;
+        margin: 0px;
+    }
+    main .achivement .Support li span{
+        font-size: 15px; 
+    }
+    main .achivement table{
+        font-size: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    main .achivement table tbody tr th{
+        padding-bottom: 15px;
+    }
+    main .Contact{
+        width: 100%;
+        height: auto;
+        margin: 0px;
+    }
+    main .Contact h2{
+        font-size: 25px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    main .Contact h3 a{
+        width: 80%;
+        font-size: 25px;
+        margin: 0% 10%;
+    }
 }
