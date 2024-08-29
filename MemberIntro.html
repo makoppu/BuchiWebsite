@@ -1,115 +1,155 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>Buchi留学 全ての日本人に最適なキャリアパスを</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="Memberintro.css">
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>運営メンバー紹介</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="Memberintro.css">
+  <link rel="icon" href="../BuchiWebsite/image/Buchi-Favicon.png" type="image/png">
+</head>
 
 <body>
-    <header>
-        <!-- <h1><img src="images/logo.png" alt="FARM CAPYZOU"></h1>     -->
-        <nav class = "menu">
-            <p><img src="image/Buchilogo2.PNG" alt="" width="80" height="50"></p>
-            <h2>BUCHI RYUGAKU</h2>
-          <ul>
-            <!-- <li><img src="../image/Buchilogo.jpg" alt="" width="80" height="50"></li>
-            <li><span style="font-weight:bold;">BUCHI RYUGAKU</span></li> -->
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ストーリー</a></li>
-            <li><a href="#">運営メンバー紹介</a></li>
-            <li><a href="#">事業紹介</a></li>
-            <li><a href="#">採用情報</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </nav>      
-      </header> 
-      <main>
-        <div class="Executive">
-          <h1>メンバー紹介</h1>
-          <h3>代表</h3>
-            <p><img src="image/S__326631455.jpg" alt="" style="width: 300px; height: auto;"></p>
-            <h4>Buchi留学　代表　Hino Yota</h4>
-            <h5>Yota Hino,university of texas austin,Instagram:@yota_hino ,CEO,頑張ります！</h5>
-            <p class ="Austin"><img src="image/University_of_Texas_Austin_Logo.png" alt="" style="width: 200px; height: autopx;"></p>
-            <h3>COO</h3>
-            <p><img src="image/S__326631451.jpg" alt="" style="width: 300px; height: auto;"></p>
-            <h4>Buchi留学　COO　Shu Shimizu</h4>
-            <h5>Shu Shimizu,university of California Berkeley,Instagram:@shoe.sim_,COO,頑張ります！</h5>
-            <p class ="Cal"><img src="image/Seal_of_University_of_California,_Berkeley.svg.png" alt="" style="width: 150px; height: auto;"></p>
+  <!-- ヘッダー -->
+  <header>
+    <nav class="menu">
+      <p><img src="../BuchiWebsite/img-logo/black_36px_Buchi.png" alt="" width="80" height="50"></p>
+      <h2>BUCHI RYUGAKU</h2>
+
+      <!-- iPhoneなどのデバイスでは３本線のメニューアイコンに納める -->
+      <!-- 800px以上では表示されない-->
+      <div class="hamburger-menu" onclick="toggleMenu(this)">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+
+      <ul id="menu-list">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ストーリー</a></li>
+        <li><a href="#">運営メンバー紹介</a></li>
+        <li><a href="#">事業紹介</a></li>
+        <li><a href="#">採用情報</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- メニューを全表示かアイコンのみか判別するJS -->
+  <script>
+    function toggleMenu(element) {
+      element.classList.toggle("active");
+    }
+  </script>
+  <main>
+    <h1>Co-Founder</h1>
+    <section class="Executive">
+      <!-- 陽太さん -->
+      <article class="executive_member">
+        <div class="title">
+          <h3>代表（CEO）</h3>
+          <img src="img-person/YotaHino.jpg" class="executive_photo" alt="日野陽太のプロフィール画像">
         </div>
+        <div class="profile">
+          <h4>Buchi留学 代表 — Hino Yota</h4>
+          <h5>University of Texas, Austin</h5>
+          <h5>Instagram:　<a
+              href="https://www.instagram.com/yota_hino?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@yota_hino</a>
+          </h5>
+          <h5>CEO、頑張ります！</h5>
+          <img src="../BuchiWebsite/img-logo/University_of_Texas_Austin_Logo.png" id="Austin_logo" alt="UT Austinのロゴ">
+        </div>
+      </article>
+      <div class="vertical_line"></div>
+      <!-- 秀さん -->
+      <article class="executive_member">
+        <div class="title">
+          <h3>COO</h3>
+          <img src="img-person/ShuShimizu.jpg" class="executive_photo" alt="清水秀のプロフィール画像">
+        </div>
+        <div class="profile">
+          <h4>Buchi留学 COO — Shimizu Shu</h4>
+          <h5>University of California, Berkeley</h5>
+          <h5>Instagram:　<a
+              href="https://www.instagram.com/shoe.sim_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@shoe.sim_</a>
+          </h5>
+          <h5>COO、頑張ります！</h5>
+          <img src="../BuchiWebsite/img-logo/Cal_logo.png" id="Cal_logo" alt="UC Berkeleyのロゴ">
+        </div>
+      </article>
+    </section>
 
-        <article class="mentor">
-          <h1>メンター紹介</h1>
-          <div>
-            <article class="nagi">
-                <p><img src="image/S__326631450.jpg" alt="" width="auto" height="200"></p>
-                <h4>
-                  Kasuya Nagi
-                </h4>
-                <h5>
-                  MENTOR
-                </h5>
-            </article>
-            <article class="yama">
-                <p><img src="image/S__326631453.jpg" alt="" width="auto" height="200"></p>
-                <h4>
-                  Nakayama Yamato
-                </h4>
-                <h5>
-                  MENTOR
-                </h5>
-              </article>
-              <article class="tai">
-                <p><img src="image/S__326631454.jpg" alt="" width="auto" height="200"></p>
-                <h4>
-                  Taichi Fukuyama
-                </h4>
-                <h5>
-                  MENTOR
-                </h5>
-            </article>
-          </div> 
+    <h1>Our Mentor</h1>
+    <setion class="mentor">
+      <div class="mentor_profile">
+        <img src="img-person/Nagi.jpg" alt="プロフィール写真">
+        <h4>Kasuya Nagi</h4>
+        <h5>MENTOR</h5>
+      </div>
+      <div class="mentor_profile">
+        <img src="img-person/YamatoNakayama.jpg" alt="プロフィール写真">
+        <h4>Nakayama Yamato</h4>
+        <h5>MENTOR</h5>
+      </div>
+      <div class="mentor_profile">
+        <img src="img-person/TaichiFukuyama.jpg" alt="プロフィール写真">
+        <h4>Fukuyama Taichi</h4>
+        <h5>MENTOR</h5>
+      </div>
 
-            <div>
-              <article class="oka">
-                  <p><img src="image/S__326631450.jpg" alt="" width="auto" height="200px"></p>
-                  <h4>
-                    Okamoto Makoto
-                  </h4>
-                  <h5>
-                    MENTOR
-                  </h5>
-              </article>
-              <article class="ayu">
-                  <p><img src="image/S__31596557.jpg" alt="" width="auto" height="200"></p>
-                  <h4>
-                    Morioka Ayu
-                  </h4>
-                  <h5>
-                    MENTOR
-                  </h5>
-                </article>
-                <article class="taitai">
-                  <p><img src="image/S__31596565.jpg" alt="" width="auto" height="200"></p>
-                  <h4>
-                    Taichi Fukuyama
-                  </h4>
-                  <h5>
-                    MENTOR
-                  </h5>
-                </article>
-            </div> 
-                <article class="taitaitai">
-                  <p><img src="image/S__31596565.jpg" alt="" width="auto" height="200"></p>
-                  <h4>
-                    Taichi Fukuyama
-                  </h4>
-                  <h5>
-                    MENTOR
-                  </h5>
-                </article>
-
-      </main>
+      <div class="mentor_profile">
+        <img src="img-person/Makoppu.jpg" alt="プロフィール写真">
+        <h4>Okamoto Makoto</h4>
+        <h5>MENTOR</h5>
+      </div>
+      <div class="mentor_profile">
+        <img src="img-person/AyuMorioka.jpg" alt="プロフィール写真">
+        <h4>Morioka Ayu</h4>
+        <h5>MENTOR</h5>
+      </div>
+      <div class="mentor_profile">
+        <img src="image/ucb_campus.jpg" alt="プロフィール写真">
+        <h4>Yamazaki Raku</h4>
+        <h5>MENTOR</h5>
+      </div>
+      <div class="mentor_profile">
+        <img src="image/ucb_campus.jpg" alt="プロフィール写真">
+        <h4>Takahashi Kotaro</h4>
+        <h5>MENTOR</h5>
+      </div>
+      <div class="mentor_profile">
+        <img src="image/ucb_campus.jpg" alt="プロフィール写真">
+        <h4>Morita Kouhei</h4>
+        <h5>MENTOR</h5>
+      </div>
+    </setion>
+  </main>
+  <!-- フッターページ -->
+  <footer>
+    <div class="footer">
+      <img src="img-logo/white_96px_Buchi.png" alt="">
+      <h2>FOLLOW US</h2>
+      <div class="socialmedia">
+        <a href="https://www.instagram.com/buchi_ryugaku?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"
+          rel="noopener noreferrer"><img src="image/instagramlogo2.png" alt=""></a>
+        <a href="https://www.threads.net/@buchi_ryugaku?xmt=AQGzDCskhuXKsIRPNvC-pSX9JP0-rzb83s5tXcv2Taqv8Gk"
+          target="_blank" rel="noopener noreferrer"><img src="image/threadslogo.png" alt=""></a>
+        <a href="https://forms.gle/ujN1hSYqYwtkrV2b7" target="_blank" rel="noopener noreferrer"><img
+            src="image/discordlogo.png" alt=""></a>
+      </div>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ストーリー</a></li>
+        <li><a href="">運営メンバー紹介</a></li>
+        <li><a href="">事業紹介</a></li>
+        <li><a href="">採用情報</a></li>
+        <li><a href="">FAQ</a></li>
+      </ul>
+      <div id="copyright">
+        <p>Copywrite @ 2024 Buchi留学 All rights reserved<br>buchiryugaku.2024@gmail.com</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
+</html>

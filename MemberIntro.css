@@ -1,172 +1,478 @@
-@charset "utf-8"; 
+@charset "utf-8";
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
- }
+    font-family: 'Hiragino Mincho Pro', 'Yu Mincho', serif;
+}
 
+/*　ヘッダー */
 .menu {
-
-    /* background-color:rgba(166, 166, 214, 0.089); */
     background-color: white;
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* padding-left: 70px; */
     align-items: center;
-    /* border: solid 2px #000; */
     height: 75px;
+    z-index: 999;
+    padding: 0 15px;
+    /* Added padding for better spacing */
 }
 
-.menu ul{ 
+.menu ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    /* width: 1240px; */
     width: 70%;
     margin: 0 auto;
-    /* padding: 10px 20px; */
     padding: 5px 5px;
     font-size: 20px;
     font-weight: bold;
     align-items: center;
-    /* border: solid 2px #e41717; */
+    transition: transform 0.3s ease-in-out;
 }
 
-.menu li a{
+.menu li {
     color: black;
     text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
 }
 
-.menu li a:hover{
+.menu li:hover {
     color: #004e8e;
 }
-main{
-    background-color:rgba(166, 166, 214, 0.089);
+
+.menu li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #004e8e;
+    transition: 0.3s;
+}
+
+.menu li a:hover::before {
+    width: 100%;
+}
+
+
+main {
+    background-color: rgba(166, 166, 214, 0.089);
     padding-top: 130px;
+    padding-bottom: 130px;
 }
 
-
-.Executive h3{
-    font-size: 35px;
-    margin-top: 100px;
-    margin-left: 40px;
-}
-
-.Executive h1{
-    border-left: 5px solid #0739ff; 
+main h1 {
+    border-left: 5px solid #0739ff;
     font-size: 40px;
     font-weight: bold;
-    margin-left: 40px;
+    margin-left: 13vw;
+    padding-left: 20px;
 }
 
-.Executive p{
+/* Executive Member*/
+.Executive {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.Executive .executive_member {
     display: flex;
     justify-content: center;
-}
-
-.Executive h3{
     margin-bottom: 100px;
 }
+.Executive .executive_member .title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 7vw;
+}
 
-.Executive h5{
+.Executive .profile {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Executive .vertical_line {
+    display: none;
+}
+
+.Executive .executive_member h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Executive .executive_member img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin: 40px auto;
+}
+
+.Executive h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 auto 20px;
+}
+
+.Executive h5 {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+
+}
+
+.Executive .executive_member h5 a {
+    color: #004e8e;
+}
+
+.Executive .executive_member #Austin_logo {
     display: flex;
     justify-content: center;
-    margin: 5px;
+
+    margin: 30px auto 0;
+    width: 190px;
+    height: auto;
+    box-shadow: none;
 }
 
-.Executive h4{
+.Executive .executive_member #Cal_logo {
     display: flex;
     justify-content: center;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 5px;
+
+    margin: 30px auto 0;
+    width: 210px;
+    height: auto;
+    box-shadow: none;
 }
 
-.Executive .Austin{
-    margin: 5px;
-}
-
-.Executive .Cal{
-    margin: 20px;
-}
-
-.mentor h1{
-    border-left: 5px solid #0739ff; 
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 40px;
-}
-
-.mentor div{
+/* メンター紹介 */
+main .mentor {
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px 10vw 0;
 }
 
-.mentor .nagi{
-    margin: 70px;
-    margin-left: 250px;
+main .mentor .mentor_profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 30px;
+
+    width: 300px;
+    height: auto;
 }
 
-.mentor .nagi h4{
-    margin-top: 25px;
+main .mentor .mentor_profile img {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 15px;
+}
+
+main .mentor .mentor_profile h4 {
     font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 10px;
 }
 
-.mentor .yama{
-    margin: 70px;
+main .mentor .mentor_profile h5 {
+    font-size: 18px;
+    color: #004e8e;
 }
 
-.mentor .yama h4{
-    margin-top: 25px;
-    font-size: 20px;
+/* Fotter page */
+footer {
+    background-color: #020d16;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.mentor .tai{
-    margin: 70px;
+footer .footer img {
+    margin-top: 50px;
+    object-fit: cover;
 }
 
-.mentor .tai h4{
-    margin-top: 25px;
-    font-size: 20px;
+footer .footer p {
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-.mentor .oka{
-    margin: 70px;
-    margin-left: 250px;
+footer .footer h2 {
+    margin-top: 51px;
+    text-decoration: underline;
 }
 
-.mentor .oka h4{
-    margin-top: 25px;
-    font-size: 20px;
+footer .footer .socialmedia a img {
+    margin: 20px 20px;
 }
 
-.mentor .ayu{
-    margin: 70px;
+footer .footer ul {
+    padding: 0% 10%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.mentor .ayu h4{
-    margin-top: 25px;
-    font-size: 20px;
+footer .footer ul li {
+    width: 190px;
 }
 
-.mentor .taitai{
-    margin: 70px;
+footer .footer ul li a {
+    margin: 30px;
+    display: inline-block;
+    position: relative;
+    /* 相対位置指定 */
+    text-decoration: none;
+    /* デフォルトのテキストの下線を消す */
 }
 
-.mentor .taitai h4{
-    margin-top: 25px;
-    font-size: 20px;
+footer .footer ul li a::after {
+    background-color: #ffffff;
+    /* 下線の色 */
+    bottom: 2px;
+    /* 要素の下端からの距離 */
+    content: "";
+    /* 要素に内容を追加 */
+    height: 2px;
+    /* 下線の高さ */
+    left: 0;
+    /* 要素の左端からの距離 */
+    opacity: 0;
+    /* 不透明度 */
+    position: absolute;
+    /* 絶対位置指定 */
+    transition: all .3s;
+    /* アニメーション効果を追加 */
+    width: 100%;
+    /* 要素の幅 */
 }
 
-.mentor .taitaitai{
-    margin: 70px;
-    margin-left: 250px;
+footer .footer ul li a:hover::after {
+    bottom: -4px;
+    /* 下線を上から下に移動 */
+    opacity: 1;
+    /* 不透明度を変更してフェードイン */
 }
 
-.mentor .taitaitai h4{
-    margin-top: 25px;
-    font-size: 20px;
+footer #copyright {
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 840px) {
+
+    html,
+    body {
+        /* どのデバイスでも横スクロール不可能にする */
+        overflow-x: hidden;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        /* ビューポートの幅に合わせる */
+        max-width: 100vw;
+        /* 最大幅をビューポート幅に制限 */
+        overflow-x: hidden;
+        /* 横スクロールバーが出ないようにする */
+        font-family: 'Hiragino Mincho Pro', 'Yu Mincho', serif;
+    }
+
+    /* ３本線のメニュー(ハンバーガーメニュー)のスタイル */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        position: fixed;
+        top: 28px;
+        right: 30px;
+
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    /* ハンバーガーメニューのアイコンのスタイル */
+    .hamburger-line {
+        width: 100%;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 4px;
+        transition: background-color 0.3s;
+    }
+
+    /* activeクラスのスタイル */
+    .active .hamburger-line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .active .hamburger-line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    /* クリック前のメニューのスタイル：非表示 */
+    #menu-list {
+        display: none;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    /* active（アイコンをクリック後)のメニューのスタイル */
+    .active+#menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        width: 50vw;
+        height: 80%;
+
+        position: fixed;
+        /* 画面の右上に固定する */
+        top: 75px;
+        /* 上端に配置 */
+        right: 0;
+        /* 右端に配置 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* 影をつけて視覚的に区切る */
+        z-index: 1000;
+        /* 他の要素の上に表示されるように */
+    }
+
+    .active+#menu-list a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        padding: 1rem;
+        transition-duration: 0.2s;
+    }
+
+    .menu li:hover {
+        color: #b5dcff;
+    }
+
+    .menu li a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: #b5dcff;
+        transition: 0.3s;
+    }
+
+    .menu li a:hover::before {
+        width: 100%;
+    }
+
+    /* Executive Member*/
+    .Executive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .Executive .executive_member {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .Executive .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Executive .vertical_line {
+        width: 80vw;
+        height: 0;
+        margin: 50px auto;
+        border-top: 0.5px solid rgba(0, 0, 0, 0.4);
+    }
+
+    .Executive .executive_member h3 {
+        margin-top: 23px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .Executive .executive_member img {
+        width: 270px;
+        height: 380px;
+        object-fit: cover;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        margin: 40px auto;
+    }
+
+    .Executive h4 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 auto 20px;
+    }
+
+    .Executive h5 {
+        line-height: 1.8;
+        text-align: center;
+
+    }
+
+    .Executive .executive_member h5 a {
+        color: #004e8e;
+    }
+
+    .Executive .executive_member #Austin_logo {
+        display: flex;
+        justify-content: center;
+
+        margin: 30px auto auto;
+        width: 190px;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .Executive .executive_member #Cal_logo {
+        display: flex;
+        justify-content: center;
+
+        margin: 30px auto auto;
+        width: 210px;
+        height: auto;
+        box-shadow: none;
+    }
+
+
 }
