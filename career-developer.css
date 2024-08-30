@@ -130,7 +130,7 @@ main .experience .member_experience .member .name_photo img {
     max-width: 15vw;
     height: auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 main .experience .member_experience .member .speech_bubble p {
     padding: 2.5px 5px;
