@@ -5,26 +5,42 @@
         <title>Buchi留学のサポート進学プラン一覧</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="zigyoushokai.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
         <header>
-            <!-- <h1><img src="images/logo.png" alt="FARM CAPYZOU"></h1>     -->
             <nav class = "menu">
-                <p><img src="image/Buchilogo2.PNG" alt="" width="80" height="50"></p>
+                <p><img src="../BuchiWebsite/img-logo/black_36px_Buchi.png" alt="" width="80" height="50"></p>
                 <h2>BUCHI RYUGAKU</h2>
-              <ul>
-                <!-- <li><img src="../image/Buchilogo.jpg" alt="" width="80" height="50"></li>
-                <li><span style="font-weight:bold;">BUCHI RYUGAKU</span></li> -->
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ストーリー</a></li>
-                <li><a href="#">運営メンバー紹介</a></li>
-                <li><a href="#">事業紹介</a></li>
-                <li><a href="#">採用情報</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
+                
+                    <!-- iPhoneなどのデバイスでは３本線のメニューアイコンに納める -->
+                     <!-- 800px以上では表示されない-->
+                     <div class="hamburger-menu" onclick="toggleMenu(this)">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                    
+                    
+    
+                    <ul id="menu-list">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ストーリー</a></li>
+                        <li><a href="#">運営メンバー紹介</a></li>
+                        <li><a href="#">事業紹介</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+    
             </nav>
         </header>
+        <!-- メニューを全表示かアイコンのみか判別するJS -->
+        <script>
+            function toggleMenu(element) {
+           element.classList.toggle("active");
+           }
+       </script>
 
         <main>
             <h1>Buchi留学のサポート一覧</h1>
@@ -77,17 +93,16 @@
             </article>
 
             <article class="ucessay">
-                <h3>編入エッセイサポート</h3>
-                <p><img src="image/DALL%C2%B7E%202024-06-26%2000.02.19%20-%20A%20simple%20illustration%20of%20a%20pen%20and%20a%20piece%20of%20paper,%20representing%20the%20concept%20of%20writing%20an%20essay.%20The%20image%20should%20be%20minimalistic%20and%20clean,%20with%20ju.webp" alt="250" width="250" height=""></p>
+                <h3>Discordグループ招待</h3>
+                <p><img src="image/discord-logo-discord-icon-transparent-free-png.webp" alt="250" width="250" height=""></p>
                 <h2>
                   UC編入の極意伝授プログラム
                 </h2>
                 <h4>
-                    UCに編入をするには、PIQエッセイの知識が不可欠です！
-                    １０名を超える現役でUCトップ校に通うエッセイのスペシャリストがあなたを全力でサポートします。
+                    このDiscordコミュニティに参加していただくと、各カレッジの有益情報やBuchi留学の優秀なメンバーの英知を集結させたRoad to UCを受け取れます！
                 </h4>
                 <ul class = "button4">
-                    <li><a href="" target="_blank">エッセイサポート</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc9sNEpBmxmxLdUuBC8oqcsSBqE9qEYXTxTYIefKdIWLwd2-w/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaZmidmHxp63N429LoyelGLdNkkNuC92iER0Z-TUv2ITU358D8ySnoY93QE_aem_AfTeu9Cn7u3JMymGRmlSainRkfgL_hkWdQhWdOVnaKlUj6yJiB9ZK1cRUUZorcARHc" target="_blank">参加フォーム</a></li>
                 </ul>
             </article>
             </div>
@@ -116,34 +131,37 @@
                     日本人から聞いた、アメリカ大学ならではの魅力とは！？
                 </h2>
                 <div class = "ichiban">
-                    <p><img src="image/DALL·E 2024-06-22 17.24.58 - An illustration showcasing diversity. The image features a group of people of different ages, ethnicities, and abilities standing together in a friend.webp" alt="" style="width: 300px; height: auto;"></p>
+                    <p><img src="image/image_123650291 (1).JPG" alt="" style="width: 300px; height: auto;"></p>
                     <a>
-                    <h3>多様性に富んだ大学で考え方が多様的になる。</h3>
-                    <h4> 多様性があるアメリカの大学では、さまざまな視点や文化的背景を持つ学生や教員が集まるのです！異文化理解力が高まり、グローバルな視点で物事を考える力が養われます！柔軟な思考と適応力が身についた人は日本だけではなく世界的に見ても、就活や目標などの多くの場面で成功を収める可能性が高まるでしょう。</h4>
+                        <h3>就職に強い学歴が手に入る可能性が高い！</h3>
                     </a>
+                    <h4>専攻による違いはあるものの、UCに入学するチャンスは決して低くはありません。UCTOP校には対象外のケースもありますが、TAG（Transfer Admission Guarantee）というシステムを利用すれば、特定のUCや専攻を除き、ほぼ全てのUCに編入することが可能です。肩書きだけでは日本での就職が難しいこともありますが、海外留学は非常に貴重な経験を提供してくれるため、日本での就職活動において大きな強みとなります。
+                    </h4>
+
                 </div>
                     
                 <div class = "niban">
-                    <p><img src="image/DALL·E 2024-06-22 17.26.41 - An illustration depicting the concept of studying. The image shows a diverse group of students in various settings such as a library, classroom, and .webp" alt="" style="width: 300px; height: auto;"></p>
+                    <p><img src="image/image_123650291.JPG" alt="" style="width: 300px; height: auto;"></p>
                     <a>
-                    <h3>世界トップレベルの勉強環境下で勉強に集中できる。</h3>
+                        <h3>世界トップレベルの勉強環境下で勉強に集中できる。</h3>
+                    </a>
                     <h4>
                         最先端の研究設備や充実した図書館、オンラインリソースなど、高品質な教育リソースが完備され、また
                         世界的に著名な教授や専門家から直接指導を受けることができるため、最新の知識や技術を習得できます。
                         さらに、周囲の優秀な学生から刺激を受けることで、自身のモチベーションも維持しやすくなります。
                     </h4>
-                    </a>
+
                 </div>
 
                 <div class = "sanban">
-                    <p><img src="image/DALL·E 2024-06-22 17.32.34 - An illustration that emphasizes the importance of learning about one's own country while also broadening global perspectives. The image features a yo.webp" alt="" style="width: 300px; height: auto;"></p>
+                    <p><img src="image/image_123650291 (2).JPG" alt="" style="width: 300px; height: auto;"></p>
                     <a>
-                    <h3>より自国のことを学べ、視野が世界になる。</h3>
-                    <h4>
-                        異なる文化や価値観を持つ学生や教員と交流する中で、自国の強みや独自性を再認識することができます!
-                        自国の理解を深めつつ、世界全体に対する視野も広がり、より多角的な視点で物事をグローバルに考える力が身につきます。
-                    </h4>
+                    <h3>人間性が深まり、視野が世界になる。</h3>
                     </a>
+                    <h4>
+                        様々な人種の方々と出会うことで、多様な考え方を理解することができ、それを学ぶことで人間性が一層深まります。人間性が深まることにより、異なる人種の方々とコミュニケーションを取る際に、様々な点に配慮できるようになります。例えば、宗教や男女差別といった問題を理解し、幅広い人々と適切に対応できるようになるのです。
+                    </h4>
+
                 </div>
             </article>
 
@@ -154,9 +172,9 @@
 
                 <div>
                     <a>
-                    <h2>適切なプログラムに合った長期サポート</h2>
-                    <h4>Buchi留学では、各プログラムに応じた充実したサポートを<br>提供しています。例えば、「UC編入の極意伝授プログラム」では、
-                        <br>7月から11月30日までの期間、自己分析、PIQの注意事項、深掘り、<br>ミーティングを中心に、最後まで全力でサポートいたします。</h4>
+                    <h2>個人の志望校に合ったサポート</h2>
+                    <h4>Buchi留学では、ひとりひとりの志望校や目標に合ったメンターをアサイ<br>ンする「メンターマッチング制度」を提供しています。顧客に合ったメン<br>ターをアサインし
+                        7月から11月30日までの期間、自己分析、注意事項、エ<br>ッセイの深掘り、ミーティングを中心に、最後まで全力でサポートいたします。</h4>
                     </a>
                     <a>
                     <h2>定期的なミーテイング</h2>
@@ -204,7 +222,7 @@
                         常に最新の情報下でサポートができます
                     </h4>
                     </a>
-                    <p class = "sai"><img src="image/DALL·E%202024-06-26%2016.38.01%20-%20A%20simple%20illustration%20evoking%20the%20concept%20of%20'information.'%20The%20image%20features%20a%20stylized%20lightbulb%20at%20the%20center,%20representing%20ideas%20and%20knowledge,%20.webp"  alt="250" width="250" height=""></p>
+                    <!-- <p class = "sai"><img src="image/DALL·E%202024-06-26%2016.38.01%20-%20A%20simple%20illustration%20evoking%20the%20concept%20of%20'information.'%20The%20image%20features%20a%20stylized%20lightbulb%20at%20the%20center,%20representing%20ideas%20and%20knowledge,%20.webp"  alt="250" width="250" height=""></p> -->
                 </div>
 
                 <div>
@@ -212,28 +230,61 @@
                     <h2>確実な合格実績</h2>
                     <h4>
                         Buchi留学運営メンバーの3人が2023年度の16人の受験者をサポートしたところ、<br>
-                        16名全員がUCB、UCLA、UCSDのいずれかのUCトップ校に合格した実績があります。
+                        16名全員がUCB、UCLA、UCSDのいずれかのUCトップ校に合格した実績があります。<br>
+                        これは同じサービスを提供をしている企業と比べると高い数字です。
                     </h4>
                     </a>
-                    <p class = "tro"><img src="image/DALL·E%202024-06-26%2016.44.27%20-%20A%20simple%20illustration%20evoking%20the%20concept%20of%20'achievement.'%20The%20image%20features%20a%20stylized%20trophy%20at%20the%20center,%20symbolizing%20success%20and%20accomplishmen.webp"  alt="250" width="250" height=""></p>
+                    <!-- <p class = "tro"><img src="image/DALL·E%202024-06-26%2016.44.27%20-%20A%20simple%20illustration%20evoking%20the%20concept%20of%20'achievement.'%20The%20image%20features%20a%20stylized%20trophy%20at%20the%20center,%20symbolizing%20success%20and%20accomplishmen.webp"  alt="250" width="250" height=""></p> -->
+                </div>
+
+                <div>
+                    <a>
+                    <h2>メンバー全員がUC生、カレッジ生</h2>
+                    <h4>
+                        Buchi留学の運営メンバーは、全員が現役のUC生またはコミュニティカレッジ生でございます。<br>
+                        私たちは全員、編入の経験を持つか、現在進行形でその経験をしております。そのため、お客<br>
+                        様と同じ立場に立ち、親身になってサービスを提供させていただくことができます。
+                    </h4>
+                    </a>
+                    <!-- <p class = "tro"><img src="image/DALL·E%202024-06-26%2016.44.27%20-%20A%20simple%20illustration%20evoking%20the%20concept%20of%20'achievement.'%20The%20image%20features%20a%20stylized%20trophy%20at%20the%20center,%20symbolizing%20success%20and%20accomplishmen.webp"  alt="250" width="250" height=""></p> -->
+                </div>
+
+                <div>
+                    <a>
+                    <h2>歴代の先輩から受け継いだデータ量</h2>
+                    <h4>
+                        直近7年間にわたってUCの先輩方から受け継いだ豊富な知識を、より多くの方々が活用できる<br>
+                        よう、教材としてまとめています。この情報を整理・統合することで、先輩方が蓄積してきた<br>
+                        貴重な7年間の財産に触れて、UC applicationに活用することができます。
+                    </h4>
+                    </a>
+                    <!-- <p class = "tro"><img src="image/DALL·E%202024-06-26%2016.44.27%20-%20A%20simple%20illustration%20evoking%20the%20concept%20of%20'achievement.'%20The%20image%20features%20a%20stylized%20trophy%20at%20the%20center,%20symbolizing%20success%20and%20accomplishmen.webp"  alt="250" width="250" height=""></p> -->
                 </div>
                 
             </article>
-              <!-- フッターページ -->
-        <footer>
-            <div>
-            <a><img src="image/Buchilogo1.jpg" alt="">        
-              <p>Copywrite @ 2024 Buchi留学 All rights reserved</p><br><p>buchiryugaku.2024@gmail.com</p></a>
-            <ul>
-              <li><h4 href="">HOME</h4></li>
-              <li><h4 href="">ストーリー</h4></li>
-              <li><h4 href="">運営メンバー紹介</h4></li>
-              <li><h4 href="">事業紹介</h4></li>
-              <li><h4 href="">採用情報</h4></li>
-              <li><h4 href="">FAQ</h4></li>
-            </ul>
-            </div>
-    
-            </footer>
         </main>
+        <!-- フッターページ -->
+        <footer>
+            <div class="footer">
+                <img src="img-logo/white_96px_Buchi.png" alt="">        
+                <h2>FOLLOW US</h2>
+                <div class ="socialmedia">
+                    <a href="https://www.instagram.com/buchi_ryugaku?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="image/instagramlogo2.png" alt=""></a>
+                    <a href="https://www.threads.net/@buchi_ryugaku?xmt=AQGzDCskhuXKsIRPNvC-pSX9JP0-rzb83s5tXcv2Taqv8Gk" target="_blank" rel="noopener noreferrer"><img src="image/threadslogo.png" alt=""></a>
+                    <a href="https://forms.gle/ujN1hSYqYwtkrV2b7" target="_blank" rel="noopener noreferrer"><img src="image/discordlogo.png" alt=""></a>
+                </div>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ストーリー</a></li>
+                    <li><a href="">運営メンバー紹介</a></li>
+                    <li><a href="">事業紹介</a></li>
+                    <li><a href="">採用情報</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+                <div id="copyright">
+                    <p>Copywrite @ 2024 Buchi留学 All rights reserved<br>buchiryugaku.2024@gmail.com</p>
+                </div>
+            </div>
+        </footer>
     </body>
+</html>
