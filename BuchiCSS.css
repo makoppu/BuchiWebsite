@@ -58,7 +58,7 @@ body {
 
 header .siteface{
     width: 100%;
-    height: 750px;
+    /* height: 750px; */
     background-color:rgba(166, 166, 214, 0.089);
     display: flex; 
     align-items: center; 
@@ -140,7 +140,7 @@ header .siteface article .button li a{
     color: #fff;
     display: block;
     border-radius: 4px;
-    width: 200px;
+    width: 220px;
     height: 50px;
     text-align: center;
     font-weight: 200;
@@ -209,7 +209,7 @@ main .service .serviceList li:hover{
 
 main .achivement{
     background-color:rgba(166, 166, 214, 0.089);
-    height:900px;
+    /* height:900px; */
 } 
 
 main .achivement h2{
@@ -357,17 +357,18 @@ main .Video .Videolist li h4{
 .Contact{
     margin-right: 0;
     margin-left: auto;
-    width: 30%;
+    width: 35%;
     height: 400px;
     margin-right: 100px;
     margin-top: 200px;
 }
 
 .Contact h2{
+    text-align: center;
     font-weight: 300;
     color: #808080;
-    font-size: 40px;
-    margin-left: 40px;
+    font-size: 2.5vw;
+    /* margin-left: 40px; */
     margin-top: 20px;    
     margin-bottom: 20px;
 }
@@ -375,18 +376,20 @@ main .Video .Videolist li h4{
     margin-top: 10px;    
     margin-bottom: 20px;
     padding-top: 0px;
+    text-align: center;
+    align-items: center;
 }
 .Contact h3 a{
     text-decoration: none;
     background-color: #020d16;
     color: #fff;
-    display: block;
+    display: inline-block;
     border-radius: 7px;
-    width: 400px;
+    width: 30vw;
     height: 70px;
-    text-align: center;
+    /* text-align: center; */
     font-weight: 200;
-    font-size: 30px;
+    font-size: 2vw;
     padding-top: 20px;
 }
 
