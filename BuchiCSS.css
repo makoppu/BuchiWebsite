@@ -431,8 +431,8 @@ footer .footer ul{
 }
 
 footer .footer ul li{
-    height:200px;
-    width: 200px;
+    /* height:200px; */
+    width: 190px;
 }
 
 footer .footer ul li a{
