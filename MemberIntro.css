@@ -131,7 +131,20 @@ main h1 {
     font-size: 18px;
     line-height: 1.8;
     text-align: center;
+}
+.Executive .profile h6 {
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
 
+.Executive .profile p {
+    width: 25vw;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .Executive .executive_member h5 a {
@@ -447,7 +460,21 @@ footer #copyright {
     .Executive h5 {
         line-height: 1.8;
         text-align: center;
+    }
 
+    .Executive .profile h6 {
+        font-size: 18px;
+        margin-top: 30px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .Executive .profile p {
+        width: 75%;
+        margin: 20px 0;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
     }
 
     .Executive .executive_member h5 a {
