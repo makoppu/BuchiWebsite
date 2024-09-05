@@ -497,7 +497,10 @@ main .achivement .additional_info {
     margin: 0 100px 0 150px;
     padding-bottom: 100px;
     line-height: 2;
-    font-weight: 18px;
+    font-size: 16px;
+}
+main .achivement .additional_info span {
+    font-weight: 600;
 }
 
 /* 連絡先 */
@@ -803,7 +806,7 @@ footer #copyright {
 
     main .siteface_content .logo_catchcopy h1 {
         /* border: solid 2px #000; */
-        margin-top: 11px;
+        margin-top: 8px;
         width: 90%;
         font-size: 16px;
         color: rgba(0, 0, 0, 1);
@@ -825,7 +828,7 @@ footer #copyright {
     main .siteface_content .service_redirect h2 {
         color: rgba(12, 12, 12, 1);
         margin-bottom: 20px;
-        font-size: 20px;
+        font-size: 28px;
         text-align: center;
         text-shadow: 1px 1px 5px #cccccc;
     }
