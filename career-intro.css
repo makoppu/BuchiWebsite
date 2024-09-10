@@ -1,12 +1,12 @@
-@charset "utf-8"; 
+@charset "utf-8";
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
- }
+    font-family: 'Hiragino Mincho Pro', 'Yu Mincho', serif;
+}
 
- .menu {
+.menu {
     background-color: white;
     display: flex;
     position: fixed;
@@ -16,7 +16,8 @@ body {
     align-items: center;
     height: 75px;
     z-index: 999;
-    padding: 0 15px; /* Added padding for better spacing */
+    padding: 0 15px;
+    /* Added padding for better spacing */
 }
 
 .menu ul {
@@ -61,13 +62,14 @@ body {
 
 
 /*タイトル*/
-header .pageTitle {    
-    background-color:rgba(166, 166, 214, 0.089); 
+header .pageTitle {
+    background-color: rgba(166, 166, 214, 0.089);
     margin-top: 75px;
     width: 100%;
     height: 300px;
 }
-header .pageTitle h1{
+
+header .pageTitle h1 {
     align-items: center;
     text-align: center;
     margin: 0 auto;
@@ -76,7 +78,7 @@ header .pageTitle h1{
     color: #004e8ebe;
 }
 
-header .pageTitle h3{
+header .pageTitle h3 {
     padding-left: 50px;
     font-size: 18px;
 }
@@ -89,6 +91,7 @@ main .group-intro {
     justify-content: center;
     margin: 50px auto;
 }
+
 main .group-intro div {
     margin: 10px auto;
     width: 60vw;
@@ -96,16 +99,19 @@ main .group-intro div {
     line-height: 2;
     margin: 10px auto;
 }
+
 main .group-intro div h3 {
     font-size: 20px;
     font-weight: bold;
     color: #174974;
     margin: 15px 0;
 }
+
 main .group-intro div p {
     font-size: 15px;
     margin: 5px 0;
 }
+
 main .group-intro div li {
     list-style: circle;
     margin-left: 40px;
@@ -116,22 +122,26 @@ main .experience .member_experience .member {
     display: flex;
     flex-direction: row;
 }
-main .experience .member_experience .member .name_photo{
+
+main .experience .member_experience .member .name_photo {
     width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 main .experience .member_experience .member .name_photo h4 {
     font-size: 16px;
     font-weight: 500;
 }
+
 main .experience .member_experience .member .name_photo img {
     max-width: 15vw;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
+
 main .experience .member_experience .member .speech_bubble p {
     padding: 2.5px 5px;
 }
@@ -152,8 +162,10 @@ main .experience .member_experience .member .speech_bubble {
 
 main .experience .member_experience .member .speech_bubble::before {
     position: absolute;
-    top: 50%; /* 左辺の50%の位置からスタート */
-    transform: translateY(-50%); /* 高さの半分だけ上に移動して中央に揃える */
+    top: 50%;
+    /* 左辺の50%の位置からスタート */
+    transform: translateY(-50%);
+    /* 高さの半分だけ上に移動して中央に揃える */
     left: -20px;
     width: 20px;
     height: 30px;
@@ -170,23 +182,25 @@ main .link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px; 
+    padding: 20px;
 }
+
 main .link h2 {
     background-color: #020d16;
     color: #fff;
     border-radius: 4px;
     width: 500px;
     height: 90px;
-    margin: 30px 0; 
+    margin: 30px 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 40px;
-    color: #fff; 
+    color: #fff;
 
-    position: relative; /* For animation */
+    position: relative;
+    /* For animation */
     background-image: linear-gradient(to left, #020d16 50%, #174974 50%);
     background-size: 200% 100%;
     background-position: right;
@@ -194,11 +208,14 @@ main .link h2 {
 }
 
 main .link h2:hover {
-    background-position: left; /* Slide the background to the left */
+    background-position: left;
+    /* Slide the background to the left */
 }
+
 main .link h2 a {
-    text-decoration: none; 
+    text-decoration: none;
 }
+
 main .link h3 {
     margin-top: 20px;
     font-size: 20px;
@@ -206,60 +223,81 @@ main .link h3 {
 }
 
 /* Fotter page */
-footer{
+footer {
     background-color: #020d16;
     color: #fff;
-    padding: 20px 0; 
+    padding: 20px 0;
     text-align: center;
 }
 
-footer .footer img{
+footer .footer img {
     margin-top: 50px;
     object-fit: cover;
 }
-footer .footer p{
+
+footer .footer p {
     margin-bottom: 5px;
     margin-top: 5px;
 }
-footer .footer h2{
+
+footer .footer h2 {
     margin-top: 51px;
     text-decoration: underline;
 }
 
-footer .footer .socialmedia a img{
+footer .footer .socialmedia a img {
     margin: 20px 20px;
 }
-footer .footer ul{
+
+footer .footer ul {
     padding: 0% 10%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 footer .footer ul li {
     width: 190px;
 }
-footer .footer ul li a{
+
+footer .footer ul li a {
     margin: 30px;
     display: inline-block;
-    position: relative; /* 相対位置指定 */
-    text-decoration: none; /* デフォルトのテキストの下線を消す */
+    position: relative;
+    /* 相対位置指定 */
+    text-decoration: none;
+    /* デフォルトのテキストの下線を消す */
 }
-footer .footer ul li a::after{
-    background-color: #ffffff; /* 下線の色 */
-    bottom: 2px; /* 要素の下端からの距離 */
-    content: ""; /* 要素に内容を追加 */
-    height: 2px; /* 下線の高さ */
-    left: 0; /* 要素の左端からの距離 */
-    opacity: 0; /* 不透明度 */
-    position: absolute; /* 絶対位置指定 */
-    transition: all .3s; /* アニメーション効果を追加 */
-    width: 100%; /* 要素の幅 */
+
+footer .footer ul li a::after {
+    background-color: #ffffff;
+    /* 下線の色 */
+    bottom: 2px;
+    /* 要素の下端からの距離 */
+    content: "";
+    /* 要素に内容を追加 */
+    height: 2px;
+    /* 下線の高さ */
+    left: 0;
+    /* 要素の左端からの距離 */
+    opacity: 0;
+    /* 不透明度 */
+    position: absolute;
+    /* 絶対位置指定 */
+    transition: all .3s;
+    /* アニメーション効果を追加 */
+    width: 100%;
+    /* 要素の幅 */
 }
-footer .footer ul li a:hover::after{
-    bottom: -4px; /* 下線を上から下に移動 */
-    opacity: 1; /* 不透明度を変更してフェードイン */
+
+footer .footer ul li a:hover::after {
+    bottom: -4px;
+    /* 下線を上から下に移動 */
+    opacity: 1;
+    /* 不透明度を変更してフェードイン */
 }
+
 footer #copyright {
     margin: 50px auto;
 }
@@ -268,19 +306,24 @@ footer #copyright {
 /* Smartphone View */
 @media screen and (max-width: 840px) {
 
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
     }
 
     body {
         margin: 0;
         padding: 0;
-        width: 100vw;  /* ビューポートの幅に合わせる */
-        max-width: 100vw;  /* 最大幅をビューポート幅に制限 */
-        overflow-x: hidden;  /* 横スクロールバーが出ないようにする */
+        width: 100vw;
+        /* ビューポートの幅に合わせる */
+        max-width: 100vw;
+        /* 最大幅をビューポート幅に制限 */
+        overflow-x: hidden;
+        /* 横スクロールバーが出ないようにする */
 
-        font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
+        font-family: 'Hiragino Mincho Pro', 'Yu Mincho', serif;
     }
+
     /* ハンバーガーメニューのスタイル */
     .hamburger-menu {
         display: flex;
@@ -310,9 +353,11 @@ footer #copyright {
     .active .hamburger-line:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
     }
+
     .active .hamburger-line:nth-child(2) {
         opacity: 0;
     }
+
     .active .hamburger-line:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
     }
@@ -325,7 +370,7 @@ footer #copyright {
     }
 
     /* activeクラスが付与されたときのメニューのスタイル */
-    .active + #menu-list {
+    .active+#menu-list {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -333,14 +378,19 @@ footer #copyright {
         width: 50vw;
         height: 80%;
 
-        position: fixed;  /* 画面の右上に固定する */
-        top: 75px;           /* 上端に配置 */
-        right: 0;        /* 右端に配置 */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 影をつけて視覚的に区切る */
-        z-index: 1000;    /* 他の要素の上に表示されるように */
+        position: fixed;
+        /* 画面の右上に固定する */
+        top: 75px;
+        /* 上端に配置 */
+        right: 0;
+        /* 右端に配置 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* 影をつけて視覚的に区切る */
+        z-index: 1000;
+        /* 他の要素の上に表示されるように */
     }
-    
-    .active + #menu-list a {
+
+    .active+#menu-list a {
         display: block;
         text-decoration: none;
         color: #fff;
@@ -352,7 +402,7 @@ footer #copyright {
     .menu li:hover {
         color: #b5dcff;
     }
-    
+
     .menu li a::before {
         content: "";
         position: absolute;
@@ -363,20 +413,20 @@ footer #copyright {
         background: #b5dcff;
         transition: 0.3s;
     }
-    
+
     .menu li a:hover::before {
         width: 100%;
     }
 
     /*ページタイトル*/
-    header .pageTitle {    
-        background-color:rgba(166, 166, 214, 0.089); 
+    header .pageTitle {
+        background-color: rgba(166, 166, 214, 0.089);
         margin-top: 75px;
         width: 100%;
         height: 150px;
     }
 
-    header .pageTitle h1{
+    header .pageTitle h1 {
         align-items: center;
         text-align: center;
         margin: 0 auto;
@@ -384,8 +434,8 @@ footer #copyright {
         font-size: 50px;
         color: #004e8ebe;
     }
-    
-    
+
+
 
     /* 班紹介 */
     main .group-intro {
@@ -395,22 +445,26 @@ footer #copyright {
         justify-content: center;
         margin: 30px auto;
     }
+
     main .group-intro div {
         margin: 10px auto;
 
         line-height: 2;
         margin: 10px auto;
     }
+
     main .group-intro div h3 {
         font-size: 20px;
         font-weight: bold;
         color: #174974;
         margin: 15px 0;
     }
+
     main .group-intro div p {
         font-size: 15px;
         margin: 5px 0;
     }
+
     main .group-intro div li {
         list-style: circle;
         margin-left: 40px;
@@ -420,17 +474,18 @@ footer #copyright {
     main .group-intro div {
         margin: 10px auto;
         width: 80vw;
-    
+
         line-height: 2;
         margin: 10px auto;
     }
 
-    
+
     main .experience .member_experience .member {
         display: flex;
         flex-direction: column;
     }
-    main .experience .member_experience .member .name_photo{
+
+    main .experience .member_experience .member .name_photo {
         width: 80vw;
         display: flex;
         flex-direction: column;
@@ -441,14 +496,16 @@ footer #copyright {
         font-size: 16px;
         font-weight: 500;
     }
+
     main .experience .member_experience .member .name_photo img {
         max-width: 40vw;
         height: auto;
     }
+
     main .experience .member_experience .member .speech_bubble p {
         padding: 2.5px 5px;
     }
-    
+
     main .experience .member_experience .member .speech_bubble {
         display: flex;
         flex-direction: column;
@@ -462,17 +519,17 @@ footer #copyright {
         background-color: #dce7f9;
         color: #333333;
     }
-    
+
     main .experience .member_experience .member .speech_bubble::before {
-    position: absolute;
-    left: 50%; 
-    transform: translateX(-50%); 
-    top: -15px;
-    width: 30px;
-    height: 15px;
-    background-color: #dce7f9;
-    clip-path: polygon(50% 0, 0 100%, 100% 100%);
-    content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -15px;
+        width: 30px;
+        height: 15px;
+        background-color: #dce7f9;
+        clip-path: polygon(50% 0, 0 100%, 100% 100%);
+        content: '';
     }
 
     /*応募リンク*/
@@ -483,26 +540,28 @@ footer #copyright {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 20px; 
+        padding: 20px;
     }
+
     main .link h2 {
         background-color: #020d16;
         color: #fff;
         border-radius: 4px;
         width: 80vw;
         height: 90px;
-        margin: 30px 0; 
+        margin: 30px 0;
 
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 30px;
-        color: #fff; 
+        color: #fff;
     }
 
     main .link h2 a {
-        text-decoration: none; 
+        text-decoration: none;
     }
+
     main .link h3 {
         margin-top: 20px;
         font-size: 15px;
