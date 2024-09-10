@@ -204,9 +204,11 @@ main .mentor .mentor_profile h4 {
     margin-bottom: 10px;
 }
 
-main .mentor .mentor_profile h5 {
-    font-size: 18px;
-    color: #004e8e;
+main .mentor .mentor_profile .mentor_school {
+    width: auto;
+    height: 35px;
+    object-fit: cover;
+    box-shadow: none;
 }
 
 /* Fotter page */
@@ -419,6 +421,12 @@ footer #copyright {
         align-items: center;
         margin-bottom: 50px;
         width: 100%;
+    }
+
+    .Executive .section_line {
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+        width: 80vw;
+        margin: 10px auto;
     }
 
     .Executive .profile {
