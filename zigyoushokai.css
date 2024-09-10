@@ -673,6 +673,7 @@ footer #copyright {
     margin: 50px auto;
 }
 
+
 @media screen and (max-width:640px){
     html, body {
         /* どのデバイスでも横スクロール不可能にする */
