@@ -499,6 +499,9 @@ main .achivement .additional_info {
     line-height: 2;
     font-weight: 18px;
 }
+main .achivement .additional_info span {
+    font-weight: 600;
+}
 
 /* 連絡先 */
 .Contact {
