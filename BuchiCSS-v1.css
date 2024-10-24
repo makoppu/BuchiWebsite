@@ -638,11 +638,11 @@ footer .footer ul li a:hover::after {
 .bottom-fixed-menu ul li a{
     text-decoration: none;
     background-color: #020d16;
-    font-size: 3vw;
+    font-size: 1vw;
     color: #fff;
     display: flex;
     border-radius: 4px;
-    width: 40vw;
+    width: 20vw;
     height: auto;
     text-align: center;
     padding: 5px 0px;

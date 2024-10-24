@@ -55,6 +55,37 @@ body {
     width: 100%;
 }
 
+.front-img p img{
+    width: 100%;
+}
+
+main{
+    padding: 5% 5%;
+    background-color:rgba(166, 166, 214, 0.089);
+}
+
+.right-and-left{
+    display: flex;
+
+}
+
+.right-and-left .left-side{
+    width: 70%;
+}
+.right-and-left .left-side h2{
+    font-size: 2vw;
+}
+/* .right-and-left .left-side ul{
+
+} */
+.right-and-left .left-side ul li{
+    font-size: 1vw;
+    margin: 1% 0%;
+}
+
+.right-and-left .right-side{
+    width: 30%;
+}
 /* footer 固定の部分 */
 .bottom-fixed-menu ul{
     background-color: #ffffff;
@@ -78,6 +109,7 @@ body {
     width: 20vw;
     height: auto;
     text-align: center;
+    font-weight: 200;
     font-size: 1vw;
     padding: 5px 0px;
     align-items: center;
@@ -91,8 +123,8 @@ body {
 /* ここにメイン */
 /* 以下は消して */
 main {
-    height: 500px;
-    background-color: #b5dcff;
+    /* height: 500px; */
+    /* background-color: #b5dcff; */
 }
 
 /* フッター */
@@ -100,7 +132,7 @@ main {
 footer{
     background-color: #020d16;
     color: #fff;
-    padding: 20px 0; 
+    padding: 30px 0; 
     text-align: center;
 }
 
@@ -250,10 +282,12 @@ footer #copyright {
         width: 100%;
     }
 
-    .bottom-fixed-menu ul
-    {
-        width: 30vw;
-        font-size: 2vw;
+    .bottom-fixed-menu ul{
+        flex-direction: column;
+        align-items: center;
     }
+    /* .bottom-fixed-menu ul li a{
+
+    } */
 
 }
