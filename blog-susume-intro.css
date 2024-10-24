@@ -128,6 +128,11 @@ main {
     font-size: 30px;
 }
 
+.intro_susume #page_title img {
+    width: 100%;
+    margin-top: 20px;
+    filter: drop-shadow(2px 2px 2px rgba(160, 160, 160, 0.8));
+}
 .intro_susume h3 {
     margin: 10px auto;
 
