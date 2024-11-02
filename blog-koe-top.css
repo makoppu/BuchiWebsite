@@ -54,9 +54,12 @@ body {
 .menu li a:hover::before {
     width: 100%;
 }
-
+.front-img p{
+    margin: 2% 5%;
+}
 .front-img p img{
-    width: 100%;
+    width: 60%;
+    max-width: 1000px;
 }
 
 main{
@@ -86,6 +89,13 @@ main{
 .right-and-left .right-side{
     width: 30%;
 }
+
+
+
+
+
+
+
 /* footer 固定の部分 */
 .bottom-fixed-menu ul{
     background-color: #ffffff;
@@ -120,19 +130,13 @@ main{
     transition: 0.3s;
 }
 
-/* ここにメイン */
-/* 以下は消して */
-main {
-    /* height: 500px; */
-    /* background-color: #b5dcff; */
-}
 
 /* フッター */
 /* Fotter page */
 footer{
     background-color: #020d16;
     color: #fff;
-    padding: 30px 0; 
+    padding: 20px 0 120px 0; 
     text-align: center;
 }
 
