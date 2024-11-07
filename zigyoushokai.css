@@ -380,11 +380,6 @@ main div{
     text-align: center;
 }
 
-.merit img{
-    width: 300px;
-    height: auto;
-}
-
 .ichiban{
     display: flex;
     /* margin: 70px;
@@ -505,41 +500,25 @@ main div{
     font-weight: 800;
     font-size: 2vw;
     color: rgba(12, 12, 12, 0.753);
-    margin: 0px 0px 10px 0px;
-
 }
 .ichiban h4{
     font-size: 1vw; 
-}
-.ichiban h4 u{
-    text-decoration-thickness: 2px;
-    text-decoration-color: rgb(149, 153, 197);
 }
 .niban h3{
     font-weight: 800;
     font-size: 2vw;
     color: rgba(12, 12, 12, 0.753);
-    margin: 0px 0px 10px 0px;
 }
 .niban h4{
     font-size: 1vw;
-}
-.niban h4 u{
-    text-decoration-thickness: 2px;
-    text-decoration-color: rgb(149, 153, 197);
 }
 .sanban h3{
     font-weight: 800;
     font-size: 2vw;
     color: rgba(12, 12, 12, 0.753);
-    margin: 0px 0px 10px 0px;
 }
 .sanban h4{
     font-size: 1vw;
-}
-.sanban h4 u{
-    text-decoration-thickness: 2px;
-    text-decoration-color: rgb(149, 153, 197);
 }
 .taisei{
     padding-bottom: 50px;
@@ -558,17 +537,13 @@ main div{
     font-weight: bold;
     font-size: 23px;
     color: rgba(12, 12, 12, 0.753);
-    margin-bottom: 3%;
 }
 
 .taisei div{
     display: flex;
     /* margin-left: 200px; */
     margin: 0% 10%;
-    justify-content: space-between;
-}
-.taisei div a{
-    width: 45%;
+    justify-content: space-between;;
 }
 
 .taisei div a{
@@ -602,7 +577,6 @@ main div{
     font-weight: 800;
     font-size: 30px;
     color: rgba(12, 12, 12, 0.753);
-    margin-bottom: 3%;
 
 }
 
@@ -672,39 +646,6 @@ footer .footer ul li a:hover::after{
 footer #copyright {
     margin: 50px auto;
 }
-/* footer 固定の部分 */
-.bottom-fixed-menu ul{
-    background-color: #ffffff;
-    width: 100%;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-}
-.bottom-fixed-menu ul li{
-    margin: 20px;
-    /* margin-right: 120px; */
-}
-.bottom-fixed-menu ul li a{
-    text-decoration: none;
-    background-color: #020d16;
-    color: #fff;
-    display: flex;
-    border-radius: 4px;
-    width: 250px;
-    height: auto;
-    text-align: center;
-    font-weight: 200;
-    padding: 5px 0px;
-    align-items: center;
-    justify-content: center;
-}
-.bottom-fixed-menu ul li a:hover{
-    opacity: 0.8;
-    transition: 0.3s;
-}
-
 
 @media screen and (max-width:640px){
     html, body {
@@ -914,26 +855,19 @@ footer #copyright {
     .merit h2{
         margin: 5% 10%;
     }
-    .merit p{
-        display: flex;
-        justify-content: center;
-    }
-    .merit p img{
-        width: 30%;
-    }
     .merit .ichiban{
         margin: 0% 10%;
         align-items: center;
     }
     .merit .ichiban a{
         margin: 5% 10%;
-        width: 70vw;
-        height: 55vw;
+        width: 55vw;
+        height: 62vw;
     }
     .merit .ichiban h3{
         font-size: 4vw;
         font-weight: bold;
-        margin: 0px 0px 10px 0px;
+        margin: 0px;
     }
     .merit .ichiban h4{
         font-size: 3vw;
@@ -946,32 +880,31 @@ footer #copyright {
     }
     .merit .niban a{
         margin: 5% 10%;
-        width: 70vw;
-        height: 55vw;
+        width: 55vw;
+        height: 60vw;
     }
     .merit .niban h3{
         font-size: 4vw;
         font-weight: bold;
-        margin: 0px 0px 10px 0px;
+        margin: 0px;
     }
     .merit .niban h4{
         font-size: 3vw;
         margin-bottom: 15%;
     }
-
     .merit .sanban{
         margin: 0% 10%;
         align-items: center;
     }
     .merit .sanban a{
         margin: 5% 10%;
-        width: 70vw;
-        height: 55vw;
+        width: 55vw;
+        height: 60vw;
     }
     .merit .sanban h3{
         font-size: 4vw;
         font-weight: bold;
-        margin: 0px 0px 10px 0px;
+        margin: 0px;
     }
     .merit .sanban h4{
         font-size: 3vw;
@@ -981,7 +914,6 @@ footer #copyright {
         margin: 10%;
     }
     .taisei div a{
-        width: 100%;
         margin: 0% 0% 10% 0%;
     }
     .taisei div a h2{
@@ -996,8 +928,5 @@ footer #copyright {
     }
     .tuyomi div a h4{
         padding-bottom: 10%;
-    }
-    .bottom-fixed-menu{
-        flex-direction: column;
     }
 }
