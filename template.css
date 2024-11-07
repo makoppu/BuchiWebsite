@@ -55,6 +55,39 @@ body {
     width: 100%;
 }
 
+/* footer 固定の部分 */
+.bottom-fixed-menu ul{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+.bottom-fixed-menu ul li{
+    margin: 20px;
+    /* margin-right: 120px; */
+}
+.bottom-fixed-menu ul li a{
+    text-decoration: none;
+    background-color: #020d16;
+    color: #fff;
+    display: flex;
+    border-radius: 4px;
+    width: 20vw;
+    height: auto;
+    text-align: center;
+    font-size: 1vw;
+    padding: 5px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-fixed-menu ul li a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 /* ここにメイン */
 /* 以下は消して */
 main {
@@ -217,7 +250,10 @@ footer #copyright {
         width: 100%;
     }
 
-    
-    
+    .bottom-fixed-menu ul
+    {
+        width: 30vw;
+        font-size: 2vw;
+    }
 
 }
