@@ -1,12 +1,12 @@
-@charset "utf-8"; 
+@charset "utf-8";
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
- }
+    font-family: 'Hiragino Mincho Pro', 'Yu Mincho', serif;
+}
 
- .menu {
+.menu {
     background-color: white;
     display: flex;
     position: fixed;
@@ -16,8 +16,10 @@ body {
     align-items: center;
     height: 75px;
     z-index: 999;
-    padding: 0 15px; /* Added padding for better spacing */
+    padding: 0 15px;
+    /* Added padding for better spacing */
 }
+
 .menu ul {
     list-style-type: none;
     display: flex;
@@ -30,6 +32,7 @@ body {
     align-items: center;
     transition: transform 0.3s ease-in-out;
 }
+
 .menu li {
     color: black;
     text-decoration: none;
@@ -37,9 +40,11 @@ body {
     position: relative;
     transition: 0.3s;
 }
+
 .menu li:hover {
     color: #004e8e;
 }
+
 .menu li a::before {
     content: "";
     position: absolute;
@@ -50,69 +55,253 @@ body {
     background: #004e8e;
     transition: 0.3s;
 }
+
 .menu li a:hover::before {
     width: 100%;
 }
 
-
-
-header .siteface{
+/* メインページ トップ */
+main {
     width: 100%;
-    /* height: 750px; */
-    background-color:rgba(166, 166, 214, 0.089);
-    display: flex; 
-    align-items: center; 
+}
+
+/* コンテナ: 背景画像とテキストの親要素 */
+.siteface-container {
+    position: relative;
+    height: 100vh;
+}
+
+/* 背景画像（UCB, UCLA, UCSD）のループ */
+main .siteface {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: slideShow 20s forwards;
+    /* 60秒で3枚の画像を表示 */
+    z-index: 1;
+    /* 背景のz-indexを1に設定 */
+}
+
+/* 背景画像の切り替えアニメーション */
+@keyframes slideShow {
+    /* UCB */
+    0% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucb_sathergate.jpg");
+        background-size: auto 100%;
+        opacity: 1;
+    }
+
+    24.99% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucb_sathergate.jpg");
+        background-size: auto 130%;
+        opacity: 1;
+    }
+
+    /* UCLA */
+    25% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucla_building.jpg");
+        background-size: auto 100%;
+        opacity: 1;
+    }
+
+    27% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucla_building.jpg");
+        background-size: auto 100%;
+        opacity: 1;
+    }
+
+    54.99% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucla_building.jpg");
+        background-size: auto 130%;
+        opacity: 1;
+    }
+
+    /* UCSD */
+    55% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucsd_library.jpg");
+        background-size: auto 100%;
+        opacity: 1;
+    }
+
+    57% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucsd_library.jpg");
+        background-size: auto 100%;
+        opacity: 1;
+    }
+
+    84.99% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucsd_library.jpg");
+        background-size: auto 130%;
+        opacity: 1;
+    }
+
+    /* UCBの画像で停止 */
+    85% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucb_sathergate.jpg");
+        background-size: auto 100%;
+        opacity: 1;
+    }
+
+    100% {
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucb_sathergate.jpg");
+        background-size: auto 110%;
+        opacity: 1;
+    }
+}
+
+main .siteface {
+    width: 100%;
+    height: 100vh;
     padding: 20px;
+
+    display: flex;
+    align-items: center;
     text-align: center;
 
     /* border: solid 2px #1781e4; */
-    
-}
-header .siteface h1{
-    width: 40%;
-    /* border: solid 2px #17e48f; */
-}
-header .siteface h1 a img{
-    /* border: solid 2px #000; */
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    padding-left: 0px;
-    margin-top: 30px;
-}
-header .siteface h1 p{
-    /* border: solid 2px #000; */
-    width: 100%;
-    padding-left: 0px;
-    font-size: 35px;
-    color: rgba(12, 12, 12, 0.753);
-    text-shadow: 1px 3px 3px #808080; 
-    text-align: center;
-    
 }
 
-header .siteface article{
+/* 文字コンテンツ */
+.siteface_content {
+    position: relative;
+    z-index: 3;
+    /* テキストのz-indexを2に設定し、背景の上に表示 */
+    padding: 70px 20px 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(166, 166, 214, 0.2);
+    padding: 20px 20px 100px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.siteface_content .logo_catchcopy {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+main .siteface_content a img {
+    /* border: solid 2px #000; */
+    width: 30vw;
+    height: auto;
+    object-fit: cover;
+}
+
+main .siteface_content h1 {
+    /* border: solid 2px #000; */
+    margin-top: 30px;
+    width: 100%;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 5px #cccccc;
+    text-align: center;
+    line-height: 1.5;
+}
+
+main .siteface_content .service_redirect {
     width: 60%;
     /* border: solid 5px #cf17e4 */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
 }
 
-header .siteface article h2{
-    width: 100%;
-    padding-left: 70px;
-    color: rgba(12, 12, 12, 0.753);
-    font-size: 60px;
-    margin-bottom: 0px;
+main .siteface_content .service_redirect h2 {
+    color: rgba(12, 12, 12, 1);
+    margin-bottom: 30px;
+    font-size: 50px;
     text-align: center;
+    text-shadow: 1px 1px 5px #cccccc;
 }
 
-header .siteface article h3{
-    width: 100%;
-    margin-top: 15px;
-    padding-left: 70px;
+main .siteface_content .service_redirect h3 {
+    width: 80%;
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: 200;
-    color: #808080;
+    line-height: 1.8;
+    color: #eeeeee;
+    text-shadow: 1px 1px 3px #333333;
     /* border: solid 5px #cf17e4; */
 }
 
@@ -122,25 +311,24 @@ header .siteface article h3{
 } */
 
 
-header .siteface article .button{
+main .siteface_content .service_redirect .button {
     display: flex;
     list-style: none;
-    margin-left: 200px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-header .siteface article .button li{
-    margin: 20px;
-    margin-right: 120px;
+main .siteface_content .service_redirect .button li {
+    margin: 10px 2.5vw;
 }
 
-header .siteface article .button li a{
+main .siteface_content .service_redirect .button li a {
     text-decoration: none;
     background-color: #020d16;
     color: #fff;
     display: block;
     border-radius: 4px;
-    width: 220px;
+    width: 200px;
     height: 50px;
     text-align: center;
     font-weight: 200;
@@ -148,213 +336,172 @@ header .siteface article .button li a{
 
 }
 
-header .siteface article .button li a:hover{
+main .siteface_content .service_redirect .button li a:hover {
     opacity: 0.8;
     transition: 0.3s;
 }
 
-
-/* From here is service list part  */
-main{
-    width: 100%;
-}
-.service{
+/* サービス紹介 */
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     /* border: solid 2px #e41717; */
 }
-.service h2{
+
+.service h2 {
     font-weight: 900;
     font-size: 40px;
     text-align: center;
     color: rgba(12, 12, 12, 0.753);
-    margin-top: 40px;
-    margin-bottom: 0;
+    margin: 30px auto;
 }
-.service h3{
+
+.service h3 {
+    font-size: 18px;
     font-weight: 200;
     color: #808080;
     text-align: center;
-    margin-top: 0;
 }
-.service .serviceList{
+
+.service .serviceList {
     display: flex;
-    height: 500px;
-    list-style: none;    
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-main .service .serviceList li{
+
+main .service .serviceList li {
     /* border: solid 2px #000; */
     text-align: center;
-    height: 300px;
+    height: 200px;
     width: 300px;
-    margin: auto;
-    color:#000000c7;
+    margin: 3vw;
+    color: #000000c7;
     display: inline-block;
     border-radius: 10px;
     box-shadow: 0px 0px 8.0px rgba(166, 166, 214, 0.781);
-    /* vertical-align: middle; */
-}
-main .service .serviceList li h4{
-    padding-top: 50px;
-    /* border: solid 2px #e41717; */
-}
-main .service .serviceList li h4 a{
-    text-decoration: none;
-    font-size: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-main .service .serviceList li:hover{
+main .service .serviceList li h4 a {
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+main .service .serviceList li:hover {
     opacity: 0.7;
     transition: 0.3s;
 }
 
-main .achivement{
-    background-color:rgba(166, 166, 214, 0.089);
-    /* height:900px; */
-} 
+main .achivement {
+    background-color: rgba(166, 166, 214, 0.089);
 
-main .achivement h2{
-    color:#000000c7;
+}
+
+main .achivement h2 {
+    color: #000000c7;
     font-size: 40px;
     font-weight: 650;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-bottom: 0px;
-    padding-top: 40px;
-} 
+    padding-top: 60px;
+}
 
-main .achivement h3{
-    color:#000000c7;
+main .achivement h3 {
+    color: #000000c7;
     font-size: 18px;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-top: 0px;
     font-weight: 200;
 }
 
-main .achivement li{
+main .achivement ul li {
     font-size: 25px;
     list-style: none;
     margin: 60px 100px;
 }
 
-main .achivement li span{
+main .achivement li span {
     font-size: 80px;
 }
 
-main .achivement li:before{
+main .achivement li:before {
     content: "";
-    width: 15px; 
+    width: 15px;
     height: 15px;
     display: inline-block;
     background-color: #020d16;
     border-radius: 50%;
 }
 
-
-main .achivement table{
-    font-size: 20px;
-    text-align: left;
-    margin-top: 20PX;
-    margin-left: 100px;
-    font-weight: 0;
-    margin-bottom: 50px;
-}
-main .achivement table th{
-    width: 500px;
-}
-main .achivement table tr{
-    height: 40px;
+main .achivement .admit_major_number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    padding: 0 150px 50px;
 }
 
-main .CostomerReview h2{
-    text-align: center;
-    color:#000000c7;
-    font-size: 40px;
-    font-weight: 650; 
-    margin-top: 100px;
-    margin-bottom: 0px; 
-}
-main .CostomerReview h3{
-    font-weight: 200;
-    color: #808080;
-    text-align: center;
-    margin-top: 0px;
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-main .CostomerReview .ReviewList .block1{
-    display: flex;
-}
-
-main .CostomerReview .ReviewList .block2{
-    display: flex;
-}
-main .CostomerReview .ReviewList li{
-    list-style: none;
-}
-main .CostomerReview .ReviewList li a{
-    display: flex;
-}
-main .CostomerReview .ReviewList li a img{
+main .achivement .admit_major_number .admit_by_uc {
     width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-main .CostomerReview .ReviewList li a p{
-    background-color:rgba(128, 158, 223, 0.39);  
-    width: 500px;
-    height:300px;
-    margin: 50px
+    margin: 30px 2vw;
 }
 
-
-main .Video{
+main .achivement .admit_major_number .admit_by_uc caption {
+    font-size: 18px;
+    font-weight: 600;
     text-align: center;
-    background-color:rgba(166, 166, 214, 0.089);
+    margin-bottom: 5px;
 }
 
-main .Video h3{
-    font-weight: 900;
-    font-size: 40px;
-    text-align: center;
-    color: rgba(12, 12, 12, 0.753);
-    margin-bottom: 0;
+main .achivement .admit_major_number .admit_by_uc table {
+    letter-spacing: 0.5rem;
 }
 
-main .Video h4{
-    font-weight: 200;
-    color: #808080;
+main .achivement .admit_major_number .admit_by_uc tbody th {
+    border-bottom: 2px solid #020d16;
 }
 
-main .Videolist{
-    justify-content: center;
-    display: flex;
+main .achivement .admit_major_number .admit_by_uc tbody th {
+    font-size: 16px;
+    padding: 6px 3px;
 }
 
-main .Videolist li{
-    justify-content: center;
-    text-align: center;
-    list-style: none;
-    margin-left: 50px;
+main .achivement .admit_major_number .admit_by_uc tbody td {
+    font-size: 14px;
+    padding: 3px;
 }
 
-main .Videolist li:hover{
-    opacity: 0.7;
-    transition: 0.3s;
+main .achivement .admit_major_number .admit_by_uc tfoot th {
+    font-size: 14px;
+    padding: 3px;
+    text-align: right;
+    padding-right: 30px;
 }
 
-main .Video .Videolist li h4{
-    background-color: #eaeff4;
-    color: #020d16;
-    display: block;
-    border-radius: 4px;
-    width: 200px;
-    height: 35px;
-    text-align: center;
-    font-weight: 400;
-    padding-top: 10px;
-    box-shadow: 0px 0px 8.0px rgba(166, 166, 214, 0.781);
+main .achivement .admit_major_number .admit_by_uc tfoot td {
+    font-size: 14px;
+    padding: 3px;
+    font-weight: 600;
 }
 
-.Contact{
+main .achivement .additional_info {
+    margin: 0 100px 0 150px;
+    padding-bottom: 100px;
+    line-height: 2;
+    font-weight: 18px;
+}
+
+/* 連絡先 */
+.Contact {
     margin-right: 0;
     margin-left: auto;
     width: 35%;
@@ -363,23 +510,25 @@ main .Video .Videolist li h4{
     margin-top: 200px;
 }
 
-.Contact h2{
+.Contact h2 {
     text-align: center;
     font-weight: 300;
     color: #808080;
     font-size: 2.5vw;
     /* margin-left: 40px; */
-    margin-top: 20px;    
+    margin-top: 20px;
     margin-bottom: 20px;
 }
-.Contact h3{
-    margin-top: 10px;    
+
+.Contact h3 {
+    margin-top: 10px;
     margin-bottom: 20px;
     padding-top: 0px;
     text-align: center;
     align-items: center;
 }
-.Contact h3 a{
+
+.Contact h3 a {
     text-decoration: none;
     background-color: #020d16;
     color: #fff;
@@ -393,36 +542,39 @@ main .Video .Videolist li h4{
     padding-top: 20px;
 }
 
-.Contact h3:hover{
+.Contact h3:hover {
     opacity: 0.8;
     transition: 0.3s;
-}
-
-/* Fotter page */
-footer{
+} 
+/* footer */
+footer {
     background-color: #020d16;
     color: #fff;
-    padding: 20px 0; 
+    padding: 20px 0;
     text-align: center;
+    padding-bottom: 110px;
 }
 
-footer .footer img{
+footer .footer img {
     margin-top: 50px;
     object-fit: cover;
 }
-footer .footer p{
+
+footer .footer p {
     margin-bottom: 5px;
     margin-top: 5px;
 }
-footer .footer h2{
+
+footer .footer h2 {
     margin-top: 51px;
     text-decoration: underline;
 }
 
-footer .footer .socialmedia a img{
+footer .footer .socialmedia a img {
     margin: 20px 20px;
 }
-footer .footer ul{
+
+footer .footer ul {
     padding: 0% 10%;
     list-style: none;
     display: flex;
@@ -430,47 +582,98 @@ footer .footer ul{
     justify-content: space-around;
 }
 
-footer .footer ul li{
-    /* height:200px; */
+footer .footer ul li {
     width: 190px;
 }
 
-footer .footer ul li a{
+footer .footer ul li a {
     margin: 30px;
     display: inline-block;
-    position: relative; /* 相対位置指定 */
-    text-decoration: none; /* デフォルトのテキストの下線を消す */
+    position: relative;
+    /* 相対位置指定 */
+    text-decoration: none;
+    /* デフォルトのテキストの下線を消す */
 }
-footer .footer ul li a::after{
-    background-color: #ffffff; /* 下線の色 */
-    bottom: 2px; /* 要素の下端からの距離 */
-    content: ""; /* 要素に内容を追加 */
-    height: 2px; /* 下線の高さ */
-    left: 0; /* 要素の左端からの距離 */
-    opacity: 0; /* 不透明度 */
-    position: absolute; /* 絶対位置指定 */
-    transition: all .3s; /* アニメーション効果を追加 */
-    width: 100%; /* 要素の幅 */
+
+footer .footer ul li a::after {
+    background-color: #ffffff;
+    /* 下線の色 */
+    bottom: 2px;
+    /* 要素の下端からの距離 */
+    content: "";
+    /* 要素に内容を追加 */
+    height: 2px;
+    /* 下線の高さ */
+    left: 0;
+    /* 要素の左端からの距離 */
+    opacity: 0;
+    /* 不透明度 */
+    position: absolute;
+    /* 絶対位置指定 */
+    transition: all .3s;
+    /* アニメーション効果を追加 */
+    width: 100%;
+    /* 要素の幅 */
 }
-footer .footer ul li a:hover::after{
-    bottom: -4px; /* 下線を上から下に移動 */
-    opacity: 1; /* 不透明度を変更してフェードイン */
+
+footer .footer ul li a:hover::after {
+    bottom: -4px;
+    /* 下線を上から下に移動 */
+    opacity: 1;
+    /* 不透明度を変更してフェードイン */
+}
+.bottom-fixed-menu ul{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+.bottom-fixed-menu ul li{
+    margin: 20px;
+    /* margin-right: 120px; */
+}
+.bottom-fixed-menu ul li a{
+    text-decoration: none;
+    background-color: #020d16;
+    font-size: 1vw;
+    color: #fff;
+    display: flex;
+    border-radius: 4px;
+    width: 20vw;
+    height: auto;
+    text-align: center;
+    padding: 5px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-fixed-menu ul li a:hover{
+    opacity: 0.8;
+    transition: 0.3s;
 }
 /* form below is for smartphone */
-@media screen and (max-width:840px)
-{
-    html, body {
+@media screen and (max-width: 840px) {
+
+    html,
+    body {
         /* 横にスクロールできないようにする */
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
+
     body {
         margin: 0;
         padding: 0;
-        width: 100vw;  /* ビューポートの幅に合わせる */
-        max-width: 100vw;  /* 最大幅をビューポート幅に制限 */
-        overflow-x: hidden;  /* 横スクロールバーが出ないようにする */
-        font-family: 'Hiragino Mincho Pro','Yu Mincho', serif;
+        width: 100vw;
+        /* ビューポートの幅に合わせる */
+        max-width: 100vw;
+        /* 最大幅をビューポート幅に制限 */
+        overflow-x: hidden;
+        /* 横スクロールバーが出ないようにする */
+        font-family: 'Hiragino Mincho Pro', 'Yu Mincho', serif;
     }
+
     /* ３本線のメニュー(ハンバーガーメニュー)のスタイル */
     .hamburger-menu {
         display: flex;
@@ -486,6 +689,7 @@ footer .footer ul li a:hover::after{
         cursor: pointer;
         transition: transform 0.3s;
     }
+
     /* ハンバーガーメニューのアイコンのスタイル */
     .hamburger-line {
         width: 100%;
@@ -494,24 +698,29 @@ footer .footer ul li a:hover::after{
         margin-bottom: 4px;
         transition: background-color 0.3s;
     }
+
     /* activeクラスのスタイル */
     .active .hamburger-line:nth-child(1) {
         transform: translateY(6px) rotate(45deg);
     }
+
     .active .hamburger-line:nth-child(2) {
         opacity: 0;
     }
+
     .active .hamburger-line:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
     }
+
     /* クリック前のメニューのスタイル：非表示 */
     #menu-list {
         display: none;
         background-color: #333;
         padding: 10px;
     }
+
     /* active（アイコンをクリック後)のメニューのスタイル */
-    .active + #menu-list {
+    .active+#menu-list {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -519,13 +728,19 @@ footer .footer ul li a:hover::after{
         width: 50vw;
         height: 80%;
 
-        position: fixed;  /* 画面の右上に固定する */
-        top: 75px;           /* 上端に配置 */
-        right: 0;        /* 右端に配置 */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 影をつけて視覚的に区切る */
-        z-index: 1000;    /* 他の要素の上に表示されるように */
+        position: fixed;
+        /* 画面の右上に固定する */
+        top: 75px;
+        /* 上端に配置 */
+        right: 0;
+        /* 右端に配置 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* 影をつけて視覚的に区切る */
+        z-index: 1000;
+        /* 他の要素の上に表示されるように */
     }
-    .active + #menu-list a {
+
+    .active+#menu-list a {
         display: block;
         text-decoration: none;
         color: #fff;
@@ -533,9 +748,11 @@ footer .footer ul li a:hover::after{
         padding: 1rem;
         transition-duration: 0.2s;
     }
+
     .menu li:hover {
         color: #b5dcff;
     }
+
     .menu li a::before {
         content: "";
         position: absolute;
@@ -546,102 +763,278 @@ footer .footer ul li a:hover::after{
         background: #b5dcff;
         transition: 0.3s;
     }
+
     .menu li a:hover::before {
         width: 100%;
     }
 
-    /* this is header (other than navigation)   */
-    header .siteface{
-        flex-direction: column;
-        width: 100%;
+    /* Buchi紹介 */
+    main .siteface_container {
+        position: relative;
+        margin-top: 75px;
+        width: 100vw;
+        height: 80vh;
     }
-    header .siteface h1{
-        padding-top: 100px;
-        width: 80%;
-    }
-    header .siteface h1 p{
-        padding-top: 20px;
-        font-size: 12px;
-    }
-    header .siteface article {
-        width: 80%;
 
-    }
-    header .siteface article h2{
-        font-size: 25px;
-        padding-left: 0px;
-        padding-top: 20px;
-    }
-    header .siteface article h3{
-        font-size: 14px;
-        padding-left: 0px;
-        padding-top: 10px;
-    }
-    header .siteface article .button{
+    main .siteface {
         width: 100%;
+        height: 100%;
+        padding: 0x;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image:
+            linear-gradient(140deg,
+                #d9e5f8cc,
+                /* 80% 不透明 */
+                #5b88d1cc 40%,
+                #2d4c7ccc 60%,
+                #041024cc),
+            url("home-img/ucb_tower.jpg");
+        background-size: 100vw auto;
+        opacity: 1;
+        animation: none;
+    }
+
+    /* 文字コンテンツ */
+    .siteface_content {
+        position: relative;
+        z-index: 3;
+        /* テキストのz-indexを2に設定し、背景の上に表示 */
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(166, 166, 214, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .siteface_content .logo_catchcopy {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    main .siteface_content .logo_catchcopy img{
+        /* border: solid 2px #000; */
+        width: 90%;
+        max-width: 200px;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+    main .siteface_content .logo_catchcopy h1 {
+        /* border: solid 2px #000; */
+        margin-top: 11px;
+        width: 90%;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 1);
+        text-shadow: 1px 1px 5px #cccccc;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    main .siteface_content .service_redirect {
+        width: 90vw;
+        /* border: solid 5px #cf17e4 */
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        margin-left: 0px;
+        margin: 10px auto;
     }
-    header .siteface article .button li{
-        margin: 20px 0px 0px 0px;
-    }
-    main .service h3{
+
+    main .siteface_content .service_redirect h2 {
+        color: rgba(12, 12, 12, 1);
+        margin-bottom: 20px;
+        font-size: 20px;
         text-align: center;
-        padding: 5% 10%;
+        text-shadow: 1px 1px 5px #cccccc;
     }
-    main .service .serviceList{
-        flex-direction: column;
-    }
-    main .service .serviceList li{
-        width: 80%;
+
+    main .siteface_content .service_redirect h3 {
+        width: 90%;
+        max-width: 400px;
         margin-bottom: 15px;
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 1.8;
+        color: #eeeeee;
+        text-shadow: 1px 1px 3px #333333;
+        /* border: solid 5px #cf17e4; */
     }
+
+    main .siteface_content .service_redirect .button {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        flex-wrap: none;
+        justify-content: center;
+    }
+
+    main .siteface_content .service_redirect .button li {
+        margin: 5px auto;
+    }
+
+    main .siteface_content .service_redirect .button li a {
+        text-decoration: none;
+        background-color: #020d16;
+        color: #fff;
+        display: block;
+        border-radius: 4px;
+        width: 200px;
+        height: 30px;
+        text-align: center;
+        font-weight: 200;
+        font-size: 18px;
+        padding-top: 6px;
+    }
+
+    main .siteface_content .service_redirect .button li a:hover {
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+
+    /* サービス紹介 */
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        /* border: solid 2px #e41717; */
+    }
+
+    .service h2 {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+        color: rgba(12, 12, 12, 0.753);
+        margin-bottom: 30px;
+    }
+
+    .service h3 {
+
+        font-size: 14px;
+        font-weight: 200;
+        color: #808080;
+        text-align: center;
+    }
+
+    .service .serviceList {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main .service .serviceList li {
+        /* border: solid 2px #000; */
+        text-align: center;
+        width: 300px;
+        height: 100px;
+        margin: 3vw;
+        color: #000000c7;
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8.0px rgba(166, 166, 214, 0.781);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .service .serviceList li h4 a {
+        text-decoration: none;
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    main .service .serviceList li:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+
+
+    /* 実績紹介 */
     main .achivement {
         height: auto;
+        line-height: 1.5;
     }
-    main .achivement h2{
+
+    main .achivement h2 {
+        font-size: 30px;
         text-align: center;
         margin: 10px 0px;
     }
-    main .achivement h3{
+
+    main .achivement h3 {
+        font-size: 18px;
         text-align: center;
         padding: 5% 10%;
         margin: 0px;
     }
+
     /* main .achivement .Support {
         list-style: none;  
     } */
-    main .achivement .Support li{
-        font-size: 15px;
+    main .achivement .Support li {
+        font-size: 16px;
         padding: 5% 10%;
         margin: 0px;
     }
-    main .achivement .Support li span{
-        font-size: 15px; 
+
+    main .achivement .Support li span {
+        font-size: 30px;
     }
-    main .achivement table{
-        font-size: 15px;
-        margin-left: 5%;
-        margin-right: 5%;
+
+    /* 表 */
+    main .achivement .admit_major_number {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        padding: 0 20px 50px;
     }
-    main .achivement table tbody tr th{
-        padding-bottom: 15px;
+    
+    main .achivement .admit_major_number .admit_by_uc {
+        width: 270px;
+        margin: 30px 2vw;
     }
-    main .Contact{
+    
+    main .achivement .additional_info {
+        margin: 0 40px;
+        padding-bottom: 100px;
+        line-height: 2;
+        font-weight: 16px;
+    }
+    
+    main .Contact {
         width: 100%;
         height: auto;
         margin: 0px;
     }
-    main .Contact h2{
+
+    main .Contact h2 {
         font-size: 25px;
         margin: 20px 0px;
         text-align: center;
     }
-    main .Contact h3 a{
+
+    main .Contact h3 a {
         width: 80%;
         font-size: 25px;
         margin: 0% 10%;
+    }
+    .bottom-fixed-menu ul li{
+        margin: 20px 5px;
     }
 }
